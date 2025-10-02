@@ -1,0 +1,195 @@
+.privacy {
+    width: 100vw;
+    height: auto;
+    background-color: rgba(186, 242, 255, 1);
+    margin-bottom: 0%;
+    padding: 0%;
+}
+
+.policy {
+    display: flex;
+}
+
+.policy h1 {
+    font-size: 75px;
+    margin-left: 180px;
+    margin-top: 10vh;
+    line-height: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    color: rgba(33, 65, 90, 1);
+}
+
+.priv-img {
+    height: 450px;
+    margin-left: 160px;
+    width: auto;
+}
+
+.policy-text {
+    height: auto;
+    width: 40vw;
+    border-radius: 20px;
+    background-color: rgba(255, 251, 233, 1);
+    margin-left: 70px;
+    margin-top: 70px;
+}
+
+.policy-text1 {
+    height: auto;
+    width: 40vw;
+    border-radius: 20px;
+    background-color: rgba(255, 251, 233, 1);
+    margin-left: 70px;
+    margin-top: 70px;
+}
+
+.policy-text2 {
+    height: auto;
+    width: 40vw;
+    border-radius: 20px;
+    background-color: rgba(255, 251, 233, 1);
+    margin-left: 70px;
+    margin-top: 70px;
+}
+
+.policy-text3 {
+    height: auto;
+    width: 40vw;
+    border-radius: 20px;
+    background-color: rgba(255, 251, 233, 1);
+    margin-left: 70px;
+    margin-top: 70px;
+}
+
+.policy-text h2 {
+    color: rgba(34, 65, 90, 1);
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 0%;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.policy-text1 h2 {
+    color: rgba(34, 65, 90, 1);
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 0%;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.policy-text2 h2 {
+    color: rgba(34, 65, 90, 1);
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 0%;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.policy-text3 h2 {
+    color: rgba(34, 65, 90, 1);
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 0%;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.policy-text p {
+    color: rgba(34, 65, 90, 1);
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 0%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.policy-text1 p {
+    color: rgba(34, 65, 90, 1);
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 0%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.policy-text2 p {
+    color: rgba(34, 65, 90, 1);
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 0%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.policy-text3 p {
+    color: rgba(34, 65, 90, 1);
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 0%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.priv1 {
+    height: 300px;
+    width: auto;
+    margin-top: 60px;
+}
+
+.priv2 {
+    height: 300px;
+    width: auto;
+    margin-top: 60px;
+}
+
+.priv3 {
+    height: 300px;
+    width: auto;
+    margin-top: 60px;
+}
+
+.priv4 {
+    height: 300px;
+    width: auto;
+    margin-top: 60px;
+}
+
+.second-policy {
+    display: flex;
+    align-items: flex-start;
+    gap: 90px;
+}
+
+.third-policy {
+    display: flex;
+    align-items: flex-start;
+    gap: 90px;
+}
+
+.fourth-policy {
+    display: flex;
+    align-items: flex-start;
+    gap: 90px;
+}
+
+.fifth-policy {
+    display: flex;
+    align-items: flex-start;
+    gap: 90px;
+}
+
+.lastone {
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: auto;
+    margin-bottom: 0%;
+}

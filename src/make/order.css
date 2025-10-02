@@ -1,0 +1,279 @@
+/* .order-container {
+    max-width: 500px;
+    margin: auto;
+    background: #f5f9fc;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    color: #006688;
+    margin-bottom: 15px;
+}
+
+.order-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+}
+
+.order-details {
+    flex: 1;
+}
+
+.order-id {
+    font-size: 12px;
+    color: gray;
+}
+
+.date {
+    font-size: 12px;
+    color: #555;
+}
+
+.price {
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.order-actions {
+    text-align: right;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.status.delivered {
+    background: #e0f7e0;
+    color: green;
+}
+
+.status.shipped {
+    background: #ffe6cc;
+    color: #ff6600;
+}
+
+.status.pending {
+    background: #fff4cc;
+    color: #b38f00;
+}
+
+.buyn-btn {
+    background: #ff4444;
+    color: #fff;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background: #cc0000;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pagination span {
+    margin: 0 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: #eee;
+}
+
+.pagination .active {
+    background: #006688;
+    color: #fff;
+} */
+
+
+/* Full screen container */
+.order-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(186, 242, 255, 1);
+    overflow-y: auto;
+    /* Scroll agar zyada orders ho */
+}
+
+/* Heading */
+.title {
+
+    font-size: 2.5rem;
+text-align: center;
+    /* Bigger like h1 */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Each order card */
+.order-card {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    margin: 0 auto 20px auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Product image */
+.order-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #000;
+    /* bold effect */
+}
+
+/* Order details */
+.order-details {
+    flex: 1;
+    margin-left: 29px;
+}
+
+.order-id {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.order-details h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 4px 0;
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.price {
+    font-weight: bold;
+    color: #222;
+}
+
+.order-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.status {
+    border-radius: 8px;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.status.delivered {
+    width: 7vw;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    background: green;
+    color: white;
+}
+.status.delivered:hover {
+    
+    background: rgb(48, 214, 48);
+    color: white;
+}
+
+.status.pending {
+    background: #fff3cd;
+    color: #856404;
+     width: 7vw;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh; 
+}
+.status.pending:hover {
+    background: #d5a919;
+    color: black;
+    
+}
+
+.status.shipped {
+ width: 7vw;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5.5vh;
+    
+    background-color: orange;
+}
+.status.shipped:hover {  
+    background-color: rgb(174, 116, 6);
+color: white;
+}
+
+/* Buy button */
+.buyn-btn {
+    padding: 6px 12px;
+    background: red;
+    margin-top: 30px;
+    height: 5vh;
+    width: 7vw;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buyn-btn:hover {
+    background: rgb(164, 3, 3);
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pagination span {
+    margin: 0 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 100%;
+    caret-color: transparent;
+ color: #000;
+    background: #eee;
+}
+.pagination span:hover {
+   background-color: rgba(32, 88, 110, 1);
+}
+

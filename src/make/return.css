@@ -1,0 +1,44 @@
+.return{
+    height: auto;
+    width: 100vw;
+    background-color: rgba(186, 242, 255, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.write{
+display: flex;
+}
+.write h1{
+    font-size: 70px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.mera{
+    margin-left: 20px;
+    height: 400px;
+    width: auto;
+}
+.writen2 h4{
+    font-size: 28px;
+    margin-bottom: 0%;
+    font-weight: 400;
+    margin-left: 5px;
+    font-weight: 600;
+    margin-top: 0%;
+}
+
+.writen2 li {
+    font-size: 20px;
+}
+.writen2 p{
+    font-size: 20px;
+}
+.writen2{
+    height: auto;
+    width: 80vw;
+margin-bottom: 70px;
+    padding: 30px;
+    background-color: rgba(255, 251, 233, 1);
+}
+

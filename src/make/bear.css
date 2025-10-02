@@ -1,0 +1,175 @@
+.Bear {
+  height: 153vh;
+  width: 100vw;
+  background-color: white;
+  caret-color: transparent;
+}
+
+.nav {
+  height: 80vh;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+  /* keeps the skew inside */
+  padding: 0;
+}
+
+.text-box {
+  background: #FFD600;
+  padding: 70px 50px;
+  transform: skew(-30deg);
+  display: flex;
+  height: 20vh;
+  margin-left: 60px;
+  width: 95vw;
+  margin-top: 120px;
+  flex-direction: column;
+  justify-content: center;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 60px;
+  border-top-left-radius: 90px;
+}
+
+.text-box h1,
+.text-box small {
+  transform: skew(10deg);
+}
+
+.text-box h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.text-box small {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 12px;
+  text-align: center;
+  color: #333;
+}
+
+/* Bear image box */
+.ber {
+  width: 15vw;
+  height: 90vh;
+  display: flex;
+}
+
+.ber img {
+  max-width: 30vw;
+  max-height: 60vh;
+margin-top: 93px;
+  z-index: 1;
+  margin-left: -380px;
+}
+.cone{
+  z-index: 0;
+  height: 40vh;
+  position: absolute;
+  margin-left: 100px;
+  width: 20vw;
+}
+
+.hed h1 {
+  text-align: center;
+  margin-top: 0%;
+}
+
+.lock1 {
+  height: 200px;
+  width: 200px;
+  background-color: silver;
+  border-radius: 100%;
+  margin-top: 10px;
+  margin-left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  >img {
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+
+  }
+}
+
+.lock p {
+  font-size: 16px;
+  text-align: center;
+  max-width: 250px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.lock h2 {
+  text-align: center;
+  font-size: 20px;
+  margin: 10px 0 5px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bttn button {
+  height: 6vh;
+  width: 17vw;
+  font-size: 23PX;
+  margin-left: 45vw;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  caret-color: transparent;
+  cursor: pointer;
+  margin-top: 50px;
+  background-color: rgba(252, 223, 64, 1);
+}
+
+.bttn button:hover {
+  background-color: rgb(164, 143, 21);
+}
+
+.next {
+  height: 5vh;
+  width: 10vw;
+  margin-left: 55vh;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+
+}
+
+.bttn {
+  display: flex;
+}
+
+.llo {
+  height: 4vh;
+  width: 2vw;
+  border-radius: 100%;
+  text-align: center;
+  caret-color: transparent;
+  display: flex;
+  gap: 20px;
+}
+
+.arlef .arrig{
+  color: black;
+  margin-top: 40px;
+}
+.arlef:hover,.arrig:hover{
+  color: white;
+  background-color: #FFD600;
+  border-radius: 100%;
+}

@@ -1,0 +1,139 @@
+.sign {
+  height: 100vh;
+  width: 100vw;
+  background-color: #BEEAE1;
+  display: flex;
+ 
+  position: relative; 
+}
+
+.login-box {
+  width: 30vw;
+  height: 90vh;
+  border-radius: 25px;
+  background: url('../assets/bole.png') no-repeat center center/cover; 
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 70vh;
+  margin-top: 4vh;
+  overflow: hidden;
+}
+
+.form-box {
+  width: 20vw;
+  height: 43vh;
+  margin-top: 37vh;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.form-box input {
+  width: 90%;
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 3px solid #f5deb3;
+  outline: none;
+}
+.form-box input[type="email"] {
+  padding-left: 45px; /* space for icon */
+  
+}
+.form-box input[type="password"] {
+  padding-left: 45px; /* space for icon */
+  
+}
+.form-box input::placeholder {
+  color: rgba(31, 52, 116, 0.35);
+  font-size: 20px;
+  left: 20px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+.input-box {
+  position: relative;
+  width: 90%;
+  margin: 10px ;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 12px 12px 45px; /* left space for icon */
+  font-size: 20px;
+  border-radius: 10px;
+  border: 3px solid #f5deb3;
+  outline: none;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+.input-box .icon {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+  color: rgba(31, 52, 116, 1);
+  font-size: 22px;
+  pointer-events: none;
+}
+
+.signin-btn {
+  width: 95%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 12px;
+  background: #ff6b6b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signin-btn:hover {
+  background: #ff4040;
+}
+
+.forgot {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: orange;
+  cursor: pointer;
+}
+
+.create-btn {
+  width: 95%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 3px solid orange;
+  border-radius: 20px;
+  background: white;
+  color: orange;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.create-btn:hover {
+  background: #ff6b6b;
+  color: white;
+}
+
+.bear {
+  position: absolute;
+  z-index: 2;
+  right: 0px;  
+  width: 25vw;
+  height: 80vh;   
+  top: 34vh;
+  pointer-events: none; 
+}
+

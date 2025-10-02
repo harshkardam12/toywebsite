@@ -1,0 +1,186 @@
+.checkout {
+    caret-color: transparent;
+    height: 230vh;
+    width: 100vw;
+    background-color: rgba(186, 242, 255, 1);
+}
+
+.upp {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.frst {
+    height: 40vh;
+    width: 25vw;
+}
+
+.dou {
+    height: 40vh;
+    width: 25vw;
+}
+
+.tri {
+    height: 40vh;
+    width: 25vw;
+}
+
+.lite {
+    height: 10vh;
+    width: 90vw;
+    margin-left: 9vh;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+    background-color: rgba(252, 222, 63, 1);
+}
+
+.lite h2 {
+    font-size: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    color: rgba(2, 68, 110, 1);
+}
+
+.crd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+
+.check {
+    height: 40vh;
+    width: 80vw;
+    background-color: rgba(255, 247, 211, 1);
+    caret-color: transparent;
+
+}
+
+.crde {
+    border-bottom: 5px solid red;
+    width: 76vw;
+    height: 36vh;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.check-img {
+    margin-left: 20px;
+    margin-top: 40px;
+    height: 20vh;
+    width: 10vw;
+
+}
+
+.check-name {
+    margin-top: -15vh;
+    font-size: 30px;
+    margin-left: 45vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    color: rgba(2, 68, 110, 1);
+}
+
+.check-price {
+    margin-left: 45vh;
+    margin-top: -10px;
+    font-size: 25px;
+    color: rgba(2, 68, 110, 1);
+}
+
+.countr {
+    display: flex;
+    margin-left: 90vh;
+    margin-top: -10vh;
+    height: 5vh;
+    font-size: 25px;
+    border: 5px solid rgba(2, 68, 110, 1);
+    justify-content: center;
+    width: 10vw;
+    background-color: white;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.countr button {
+    margin: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.subtotal {
+    font-size: 25px;
+    color: rgba(2, 68, 110, 1);
+    margin-left: 65vw;
+    margin-top: -5vh;
+}
+.total-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 22vh;
+    border-bottom-left-radius:40px ;
+    border-bottom-right-radius:40px ;
+    width: 80vw;
+    padding-bottom: 40px;
+    background-color: rgba(255, 247, 211, 1);
+}
+
+
+.total-box h2{
+    font-size: 35px;
+    margin-top: 0%;
+    color: rgba(2, 68, 110, 1);
+}
+.total-box h5{
+    font-size: 30px;
+    
+    color: rgba(2, 68, 110, 1);
+}
+.total button{
+    height: 6vh;
+    width: 10vw;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(252, 222, 63, 1);
+    cursor: pointer;
+    color: rgba(2, 68, 110, 1);
+    font-weight: 700;
+    
+}
+.total button:hover{
+    background-color: rgb(204, 172, 12);
+    
+}
+.lower21 {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: rgba(186, 242, 255, 1);
+  height: auto;
+}
+
+
+.low1{
+    height: 400px;
+    width: 400px;
+}
+.low2{
+    height: 340px;
+    width: 350px;
+    margin-top: 20px;
+}
+.low12 {
+  height: 400px;
+  width: 400px;
+  transform: scaleX(-1); }

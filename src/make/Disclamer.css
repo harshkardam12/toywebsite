@@ -1,0 +1,45 @@
+.disclamer{
+    height: auto;
+    width: 100vw;
+    background-color: rgba(186, 242, 255, 1);
+    display: flex;
+    flex-direction: column;
+
+align-items: center;}
+.disk{
+    height: auto;
+    width: 100vw;
+}
+.sub{
+    height: auto;
+    width: 45vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -50px;
+    border-radius: 20px;
+    z-index: 2;
+    background-color: rgba(252, 222, 63, 1);
+}
+.listing{
+    height: auto;
+    width: 80vw;
+    padding-top: 70px;
+    padding-left: 20px;
+    font-size: 25px;
+    margin-bottom: 70px;
+    border-radius: 20px;
+    background-color: rgba(255, 251, 233, 1);
+}
+ul li {
+  margin-bottom: 10px; /* har li ke niche 10px gap */
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* li ke bich ka gap */
+}
+
+.listing h4{
+    text-align: center;
+}

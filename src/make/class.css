@@ -1,0 +1,36 @@
+.class {
+    height: 55vh;
+    width: 100vw;
+    background-color: rgba(186, 242, 255, 1);
+    margin-top: 20px;
+}
+
+.class h1 {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 0%;
+    caret-color: transparent;
+}
+
+.inside {
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    caret-color: transparent;
+}
+
+.pop {
+    height: 200px;
+    width: 200px;
+    filter: drop-shadow(5px 5px 10px black);
+    font-size: 30px;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFD19D;
+    border-radius: 100%;
+
+}

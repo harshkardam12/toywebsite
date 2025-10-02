@@ -1,0 +1,270 @@
+.loading {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(186, 242, 255, 1);
+}
+.loading h1 {
+    margin-top: 0%;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+    color: rgba(32, 88, 110, 1);
+    margin-bottom: 90px;
+}
+.loading p{
+    text-align: center;
+    font-size: 35px;
+    color: rgba(32, 88, 110, 1);
+    margin-top: 20px;
+    font-weight: 600;
+}
+.load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.lod {
+    border-radius: 100%;
+    height: 40vh;
+    caret-color: transparent;
+    width: 20vw;
+    border-bottom: 25px dotted rgb(18, 131, 175);
+    border-top: 25px dotted rgb(18, 131, 175);
+    border-left: 25px dotted skyblue;
+    border-right: 25px dotted skyblue;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.ani{
+    display: flex;
+    margin-left: 37vw;
+    margin-top: 50px;
+
+    gap: 20px;
+}
+.myplay {
+    color: skyblue;
+    filter: drop-shadow(3px 4px 0px rgb(45, 178, 231));
+}
+
+.filler {
+    height: 6vh;
+    width: 20vw;
+    background-color: rgb(252, 230, 108);
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding-left: 10px;
+}
+.filler2 {
+    height: 4vh;
+    width: 10vw;
+    border-radius: 20px;
+    background-color: rgb(235, 200, 3);
+}
+
+@media(max-width: 1024px) {
+    .loading {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(186, 242, 255, 1);
+}
+    .loading h1 {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    .loading p{
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    .lod {
+        height: 40vh;
+        width: 25vw;
+        caret-color: transparent;
+        border-bottom: 20px dotted rgb(18, 131, 175);
+        border-top: 20px dotted rgb(18, 131, 175);
+        border-left: 20px dotted skyblue;
+        border-right: 20px dotted skyblue;
+    }
+    .ani{
+        margin-left: 30vw;
+        margin-top: 90px;
+        gap: 15px;
+    }
+    .filler {
+        height: 6vh;
+        width: 30vw;
+        padding-left: 8px;
+        border-radius: 30px;
+    }
+    .filler2 {
+        height: 5vh;
+        border-radius: 20px;
+        width: 15vw;
+    }
+    
+}
+
+@media(max-width: 768px) {
+    .loading h1 {
+        font-size: 30px;
+        margin-bottom: 90px;
+    }
+    .loading p{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .lod {
+        height: 35vh;
+        width: 28vw;
+        caret-color: transparent;
+        border-bottom: 15px dotted rgb(18, 131, 175);
+        border-top: 15px dotted rgb(18, 131, 175);
+        border-left: 15px dotted skyblue;
+        border-right: 15px dotted skyblue;
+    }
+    .ani{
+        margin-left: 25vw;
+        margin-top: 90px;
+        gap: 10px;
+    }
+    .filler {
+        height: 5vh;
+        width: 40vw;
+        padding-left: 5px;
+        border-radius: 30px;
+    }
+    .filler2 {
+        height: 4vh;
+        border-radius: 20px;
+        width: 20vw;
+    }
+    
+}
+@media(max-width: 480px) {
+    .loading h1 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .loading p{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .lod {
+        height: 30vh;
+        width: 50vw;
+        caret-color: transparent;
+        border-bottom: 10px dotted rgb(18, 131, 175);
+        border-top: 10px dotted rgb(18, 131, 175);
+        border-left: 10px dotted skyblue;
+        border-right: 10px dotted skyblue;
+    }
+    .ani{
+        margin-left: 15vw;
+        margin-top: 80px;
+        gap: 5px;
+    }
+    .filler {
+        height: 4vh;
+        width: 50vw;
+        padding-left: 3px;
+    }
+    .myplay{
+        height: 5vh;
+        margin-top: -5px;
+    }
+    .filler2 {
+        height: 3vh;
+        width: 20vw;
+    }
+    
+}
+@media(max-width: 375px) {
+    .loading h1 {
+        font-size: 28px;
+        margin-bottom: 90px;
+    }
+    .loading p{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .lod {
+        height: 25vh;
+        width: 50vw;
+        caret-color: transparent;
+        border-bottom: 8px dotted rgb(18, 131, 175);
+        border-top: 8px dotted rgb(18, 131, 175);
+        border-left: 8px dotted skyblue;
+        border-right: 8px dotted skyblue;
+    }
+    .ani{
+        margin-left: 10vw;
+        margin-top: 100px;
+        gap: 5px;
+    }
+    .filler {
+        height: 4vh;
+        width: 60vw;
+        padding-left: 3px;
+    }
+    .myplay{
+        height: 5vh;
+        margin-top: -5px;
+    }
+    .filler2 {
+        height: 3vh;
+        width: 30vw;
+    }
+    
+}
+@media(max-width:320px) {
+    .loading h1 {
+        font-size: 25px;
+        margin-bottom: 90px;
+    }
+    .loading p{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .lod {
+        height: 30vh;
+        width: 60vw;
+        caret-color: transparent;
+        border-bottom: 6px dotted rgb(18, 131, 175);
+        border-top: 6px dotted rgb(18, 131, 175);
+        border-left: 6px dotted skyblue;
+        border-right: 6px dotted skyblue;
+    }
+    .ani{
+        margin-left: 13vw;
+        margin-top: 100px;
+        gap: 5px;
+    }
+    .filler {
+        height: 3vh;
+        width: 50vw;
+        padding-left: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .myplay{
+        height: 4vh;
+        margin-top: -5px;
+    }
+    .filler2 {
+        height: 2vh;
+        width: 40vw;
+    }
+    
+}
