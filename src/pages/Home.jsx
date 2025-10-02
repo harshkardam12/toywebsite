@@ -12,7 +12,6 @@ function Home() {
     <div>
            <Small />
          <Content />
-        <ProductCarousel />
         <Class />
         <Bear /> 
     </div>
