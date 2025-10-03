@@ -44,7 +44,7 @@ function App() {
           <Route path="/faq" element={<Faq />}/>
           <Route path="/term" element={<Termandcondition />}/>
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
 
       </BrowserRouter>
 

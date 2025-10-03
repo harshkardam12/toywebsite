@@ -1,139 +1,139 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../make/small.css";
 import { Link } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 function Small() {
-  const [openDropdown, setOpenDropdown] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(null);
+  const containerRef = useRef(null);
 
-  // dropdown animation
-  const dropdownAnim = {
-    hidden: { opacity: 0, height: 0 },
-    show: { 
-      opacity: 1, 
-      height: "auto", 
-      transition: { duration: 0.4, ease: "easeOut" } 
-    },
-    exit: { 
-      opacity: 0, 
-      height: 0, 
-      transition: { duration: 0.3, ease: "easeIn" } 
+  // close when clicked outside
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (containerRef.current && !containerRef.current.contains(e.target)) {
+        setActiveIndex(null);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const toggleDropdown = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.2 }
     }
   };
 
-  // item animation (stagger children)
-  const itemAnim = {
-    hidden: { opacity: 0, y: 15 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.3 } }
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 40 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
   };
 
-  const toggleDropdown = (name) => {
-    setOpenDropdown(openDropdown === name ? null : name);
+  const listItem = {
+    hidden: { opacity: 0, x: -20 },
+    show: { opacity: 1, x: 0, transition: { duration: 0.4 } }
   };
 
   return (
-    <div className="small">
+    <motion.div
+      className="small"
+      variants={container}
+      initial="hidden"
+      animate="show"
+      ref={containerRef}
+    >
       {/* SHOP BY AGE */}
-      <div className="dropdown">
-        <summary onClick={() => toggleDropdown("age")}>SHOP BY AGE</summary>
-        <AnimatePresence>
-          {openDropdown === "age" && (
-            <motion.ul 
-              className="dropdown-menu"
-              variants={dropdownAnim}
-              initial="hidden"
-              animate="show"
-              exit="exit"
-            >
-              <motion.li variants={itemAnim}><Link to="/list">0-2 Years</Link></motion.li>
-              <motion.li variants={itemAnim}>3-5 Years</motion.li>
-              <motion.li variants={itemAnim}>6-8 Years</motion.li>
-              <motion.li variants={itemAnim}>9+ Years</motion.li>
-            </motion.ul>
-          )}
-        </AnimatePresence>
-      </div>
+      <motion.div className="dropdown" variants={fadeInUp}>
+        <summary onClick={() => toggleDropdown(0)}>SHOP BY AGE</summary>
+        {activeIndex === 0 && (
+          <motion.ul
+            className="dropdown-menu"
+            initial="hidden"
+            animate="show"
+            variants={container}
+          >
+            <Link to="/list"><motion.li variants={listItem}>0-2 Years</motion.li></Link>
+            <motion.li variants={listItem}>3-5 Years</motion.li>
+            <motion.li variants={listItem}>6-8 Years</motion.li>
+            <motion.li variants={listItem}>9+ Years</motion.li>
+          </motion.ul>
+        )}
+      </motion.div>
 
       {/* TOY'S */}
-      <div className="dropdown">
-        <summary onClick={() => toggleDropdown("toys")}>TOY'S</summary>
-        <AnimatePresence>
-          {openDropdown === "toys" && (
-            <motion.ul 
-              className="dropdown-menu"
-              variants={dropdownAnim}
-              initial="hidden"
-              animate="show"
-              exit="exit"
-            >
-              <motion.li variants={itemAnim}>Soft Toys</motion.li>
-              <motion.li variants={itemAnim}>Educational Toys</motion.li>
-              <motion.li variants={itemAnim}>Action Figures</motion.li>
-            </motion.ul>
-          )}
-        </AnimatePresence>
-      </div>
+      <motion.div className="dropdown" variants={fadeInUp}>
+        <summary onClick={() => toggleDropdown(1)}>TOY'S</summary>
+        {activeIndex === 1 && (
+          <motion.ul
+            className="dropdown-menu"
+            initial="hidden"
+            animate="show"
+            variants={container}
+          >
+            <motion.li variants={listItem}>Soft Toys</motion.li>
+            <motion.li variants={listItem}>Educational Toys</motion.li>
+            <motion.li variants={listItem}>Action Figures</motion.li>
+          </motion.ul>
+        )}
+      </motion.div>
 
       {/* PREMIUM TOYS */}
-      <div className="dropdown">
-        <summary onClick={() => toggleDropdown("premium")}>PREMIUM TOYS</summary>
-        <AnimatePresence>
-          {openDropdown === "premium" && (
-            <motion.ul 
-              className="dropdown-menu"
-              variants={dropdownAnim}
-              initial="hidden"
-              animate="show"
-              exit="exit"
-            >
-              <motion.li variants={itemAnim}>Robots</motion.li>
-              <motion.li variants={itemAnim}>Remote Cars</motion.li>
-              <motion.li variants={itemAnim}>Drones</motion.li>
-            </motion.ul>
-          )}
-        </AnimatePresence>
-      </div>
+      <motion.div className="dropdown" variants={fadeInUp}>
+        <summary onClick={() => toggleDropdown(2)}>PREMIUM TOYS</summary>
+        {activeIndex === 2 && (
+          <motion.ul
+            className="dropdown-menu"
+            initial="hidden"
+            animate="show"
+            variants={container}
+          >
+            <motion.li variants={listItem}>Robots</motion.li>
+            <motion.li variants={listItem}>Remote Cars</motion.li>
+            <motion.li variants={listItem}>Drones</motion.li>
+          </motion.ul>
+        )}
+      </motion.div>
 
       {/* CATEGORIES */}
-      <div className="dropdown">
-        <summary onClick={() => toggleDropdown("categories")}>CATEGORIES</summary>
-        <AnimatePresence>
-          {openDropdown === "categories" && (
-            <motion.ul 
-              className="dropdown-menu"
-              variants={dropdownAnim}
-              initial="hidden"
-              animate="show"
-              exit="exit"
-            >
-              <motion.li variants={itemAnim}>Boys</motion.li>
-              <motion.li variants={itemAnim}>Girls</motion.li>
-              <motion.li variants={itemAnim}>Unisex</motion.li>
-            </motion.ul>
-          )}
-        </AnimatePresence>
-      </div>
+      <motion.div className="dropdown" variants={fadeInUp}>
+        <summary onClick={() => toggleDropdown(3)}>CATEGORIES</summary>
+        {activeIndex === 3 && (
+          <motion.ul
+            className="dropdown-menu"
+            initial="hidden"
+            animate="show"
+            variants={container}
+          >
+            <motion.li variants={listItem}>Boys</motion.li>
+            <motion.li variants={listItem}>Girls</motion.li>
+            <motion.li variants={listItem}>Unisex</motion.li>
+          </motion.ul>
+        )}
+      </motion.div>
 
       {/* TRENDING */}
-      <div className="dropdown">
-        <summary onClick={() => toggleDropdown("trending")}>TRENDING</summary>
-        <AnimatePresence>
-          {openDropdown === "trending" && (
-            <motion.ul 
-              className="dropdown-menu"
-              variants={dropdownAnim}
-              initial="hidden"
-              animate="show"
-              exit="exit"
-            >
-              <motion.li variants={itemAnim}>Top Rated</motion.li>
-              <motion.li variants={itemAnim}>New Arrivals</motion.li>
-              <motion.li variants={itemAnim}>Best Sellers</motion.li>
-            </motion.ul>
-          )}
-        </AnimatePresence>
-      </div>
-    </div>
+      <motion.div className="dropdown" variants={fadeInUp}>
+        <summary onClick={() => toggleDropdown(4)}>TRENDING</summary>
+        {activeIndex === 4 && (
+          <motion.ul
+            className="dropdown-menu"
+            initial="hidden"
+            animate="show"
+            variants={container}
+          >
+            <motion.li variants={listItem}>Top Rated</motion.li>
+            <motion.li variants={listItem}>New Arrivals</motion.li>
+            <motion.li variants={listItem}>Best Sellers</motion.li>
+          </motion.ul>
+        )}
+      </motion.div>
+    </motion.div>
   );
 }
 

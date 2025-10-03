@@ -19,8 +19,6 @@ function About() {
               <li>To create safe, engaging, and educational toys.</li>
               <li>To empower parents with tools that support their children’s development.</li>
               <li>To nurture imagination through fun learning experiences.</li>
-              <li>To promote problem-solving and teamwork in kids.</li>
-              <li>To inspire a lifelong love of exploration and discovery.</li>
             </ul>
           </div>
           <div className='god'>

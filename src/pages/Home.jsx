@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Small from '../component/Small'
 import Content from '../component/Content'
 import ProductCarousel from '../component/Product'
@@ -8,9 +8,11 @@ import About from '../component/About'
 import Bear from '../component/Bear'
 
 function Home() {
+
   return (
-    <div>
-           <Small />
+ <div >  
+           {/* <Small /> */}
+     
          <Content />
         <ProductCarousel />
         <Class />

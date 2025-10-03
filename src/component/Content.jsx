@@ -37,27 +37,27 @@ function Content() {
             </motion.header>
 
             {/* Images Animation */}
-            <motion.img 
-                src={Kide} 
-                alt=""  
+            <motion.img
+                src={Kide}
+                alt=""
                 className='sideimg'
                 variants={fadeUp}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}
             />
-            <motion.img 
-                src={Kida} 
-                alt=""  
+            <motion.img
+                src={Kida}
+                alt=""
                 className='centerimg'
                 variants={fadeUp}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}
             />
-            <motion.img 
-                src={Kido} 
-                alt=""  
+            <motion.img
+                src={Kido}
+                alt=""
                 className='rightimg'
                 variants={fadeUp}
                 initial="hidden"
@@ -76,7 +76,7 @@ function Content() {
             </motion.p>
 
             {/* Circle Boxes with Stagger Effect */}
-            <motion.div 
+            <motion.div
                 className='circle'
                 variants={staggerParent}
                 initial="hidden"
