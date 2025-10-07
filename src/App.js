@@ -20,6 +20,7 @@ import Return from './component/Return';
 import Faq from './component/Faq';
 import ProductPages from './component/Productpage';
 import Productlist from './component/Productlist';
+import Placeorder from './component/Placeorder';
 function App() {
   return (
     <div className="App">
@@ -45,7 +46,7 @@ function App() {
           <Route path="/term" element={<Termandcondition />}/>
         </Routes>
         {/* <Footer /> */}
-
+<Placeorder/>
       </BrowserRouter>
 
 

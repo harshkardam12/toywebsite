@@ -13,9 +13,9 @@ function Home() {
  <div >  
            <Small />
      
-         <Content />
-        {/* <ProductCarousel />
-        <Class />
+         {/* <Content /> */}
+        {/* <ProductCarousel /> */}
+        {/* <Class />
         <Bear />  */}
     </div>
   )

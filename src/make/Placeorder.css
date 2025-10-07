@@ -1,0 +1,75 @@
+.placeorder {
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(186, 242, 255, 1);
+
+}
+
+.place1 {}
+
+.place1 h1 {
+    text-align: center;
+    margin-top: 0%;
+    padding-top: 30px;
+    font-size: 50px;
+    color: rgba(32, 88, 110, 1);
+}
+
+.ballone {
+    height: 300px;
+    margin-top: 30px;
+    width: auto;
+}
+
+.tddy {
+    margin-right: 590px;
+    height: 420px;
+    width: auto;
+}
+
+.imgk {
+    display: flex;
+    justify-content: space-around;
+}
+
+.check-add {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.add-bttn {
+    height: 7vh;
+    width: 18vw;
+    margin-left: 20vh;
+    border: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.add-bttn::placeholder {
+    color: rgba(32, 88, 110, 0.55);
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.add-bttn:focus {
+    outline: none;
+}
+.check-detail{
+    display: flex;
+}
+.check-detail h2{
+font-size: 35px;
+margin-top: 80px;
+margin-left: 20vh;
+}
+.Pin-img{
+    height: 400px;
+    width: auto;
+    margin-left: 190px;
+    margin-top: 140px;
+}

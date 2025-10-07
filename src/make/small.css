@@ -1,3 +1,6 @@
+/* ==============================
+   Base Styles
+   ============================== */
 .small {
   height: 7vh;
   width: 100vw;
@@ -14,20 +17,30 @@
 }
 
 .dropdown summary {
-  font-size: 16px;
+  font-size: 17px;
   caret-color: transparent;
   font-weight: 600;
   cursor: pointer;
   transition: color 0.3s ease, transform 0.2s ease;
   padding-right: 20px;
+  max-width: 100%; /* text overflow prevent */
 }
 
-/* arrow pseudo-element */
+.dropdown summary::after {
+  content: "▼";
+  font-size: 20px;
+  margin-left: 8px;
+  font-weight: 500;
+  margin-bottom: -10px;
+  position: relative;
+}
 
+.dropdown[open] summary::after {
+  content: "▲";
+}
 
-/* optional: arrow rotate on hover */
 .dropdown:hover summary::after {
-  transform: translateY(-50%) rotate(-180deg)
+  transform: translateY(-50%) rotate(-180deg);
 }
 
 .dropdown summary:hover {
@@ -45,13 +58,12 @@
   height: auto;
   width: auto;
   padding-left: 0%;
-  background: transparent;
+  background: white;
   border: 1px solid #ddd;
   border-radius: 6px;
   box-shadow: 3px 4px 10px black;
   z-index: 10;
   animation: fadeIn 0.3s ease forwards;
-
 }
 
 .dropdown-menu li {
@@ -68,52 +80,67 @@
   border-radius: 4px;
 }
 
-.dropdown summary::after {
-  content: "▼";
-  font-size: 20px;
-  margin-left: 8px;
-  font-weight: 500;
-  margin-bottom: -10px;
-  position: relative;
-}
-
-.dropdown[open] summary::after {
-  content: "▲";
-
-}
-
 /* animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(5px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* responsive */
+/* ==============================
+   Responsive Breakpoints
+   ============================== */
+
+/* Tablet: 768px and below */
 @media (max-width: 768px) {
   .small {
     justify-content: space-evenly;
+    gap: 10px;
   }
 
-  .dropdown span {
+  .dropdown summary {
     font-size: 14px;
+    font-weight: 500;
+  }
+
+  .dropdown summary::after {
+    font-size: 16px;
+  }
+
+  .dropdown-menu li {
+    font-size: 13px;
+    padding: 8px 12px;
   }
 }
 
-@media (max-width: 426px) {
-  .dropdown span {
-    font-size: 12px;
+/* Mobile: 430px and below */
+@media(max-width:426px){
+.small {
+    justify-content: space-around;
+    gap: 0px;
+    padding-left: 0%;
   }
-}
 
-@media (max-width: 321px) {
-  .dropdown span {
+  .dropdown summary {
+    font-size: 7px;
+    margin-right: 0%;
+
+    font-weight: 700;
+
+    margin-left: 5px;
+  }
+
+  .dropdown summary::after {
     font-size: 10px;
+  }
+
+  .dropdown-menu li {
+    padding: auto;
+    font-size: 12px;
   }
 }

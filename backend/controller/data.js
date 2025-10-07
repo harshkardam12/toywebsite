@@ -4,7 +4,7 @@ const data = (req, res) => {
             id: 1,
             name: "Dragon plastic toy",
             price: "₹ 120/-",
-            rating: 5,
+            rating: 4,
             oldprice: "₹ 999/-",
             discount: "10%  off",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXGLn8_oubq_KSlI2EF1ZGvxKiSnmrrxujVw&s"
