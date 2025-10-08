@@ -21,6 +21,7 @@ import Faq from './component/Faq';
 import ProductPages from './component/Productpage';
 import Productlist from './component/Productlist';
 import Placeorder from './component/Placeorder';
+import Productpage from './component/Productpage';
 function App() {
   return (
     <div className="App">
@@ -31,22 +32,23 @@ function App() {
           <Route path='/sin' element={<Sign />} />
           <Route path='/create' element={<Create />} />
           <Route path='/about' element={<About />} />
-          <Route path="/contact" element={<Contact />}/>
-          <Route path="/list" element={<Productlist />}/>
-          <Route path="/err" element={<Error />}/>
-          <Route path="/loading" element={<Loading />}/>
-          <Route path="/ppage" element={<ProductPages />}/>
-          <Route path="/order" element={<Order />}/>
-          <Route path="/thanks" element={<Thankyou />}/>
-          <Route path="/checkout" element={<Checkout />}/>
-          <Route path="/privacy" element={<Privacy />}/>
-          <Route path="/dis" element={<Disclamer />}/>
-          <Route path="/return" element={<Return />}/>
-          <Route path="/faq" element={<Faq />}/>
-          <Route path="/term" element={<Termandcondition />}/>
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/list" element={<Productlist />} />
+          <Route path="/err" element={<Error />} />
+          <Route path="/loading" element={<Loading />} />
+          <Route path="/ppage" element={<ProductPages />} />
+          <Route path="/order" element={<Order />} />
+          <Route path="/thanks" element={<Thankyou />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/dis" element={<Disclamer />} />
+          <Route path="/return" element={<Return />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/term" element={<Termandcondition />} />
         </Routes>
         {/* <Footer /> */}
-<Placeorder/>
+        {/* <Placeorder/> */}
+        <Productpage />
       </BrowserRouter>
 
 
