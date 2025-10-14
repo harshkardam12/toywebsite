@@ -29,7 +29,7 @@ function Privacy() {
             </div>
             <div className='fourth-policy'>
                 <div className='policy-text2'>
-                    <h2>Sharing of Informaton</h2>
+                    <h2>Sharing of Information</h2>
                     <p>All toy prices are clearly displayed in local currency with taxes where applicable. We offer secure payment options, including cards, UPI, and COD. Parents/guardians should manage transactions to ensure safe, transparent, and hassle-free shopping for children’s products.</p>
                 </div>
                 <img src={Priv3} alt="" className='priv3' />

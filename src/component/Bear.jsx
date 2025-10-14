@@ -39,7 +39,7 @@ function Bear() {
           </div>
           <div className='lock'>
             <div className='lock1'><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7NnZ8jxXkH76PISpyyuSFsjiTpd0GAmMohw&s" alt="" /></div>
-            <h2>jdqoidjwidoqwnd</h2>
+            <h2>sema</h2>
             <p>Truly wonderful experience, supportive staff, quick help, and outstanding quality. Im extremely happy with my purchase and highly recommend.</p>
           </div>
           <div className='lock'>
@@ -52,10 +52,10 @@ function Bear() {
           <button>Share Your Feedback</button>
           <div className='next'>
             <div className='llo'>
-              <ArrowLeft  size={30} className='arlef'/>
+              <ArrowLeft  size={35} className='arlef'/>
             </div>
             <div className='llo'>
-              <ArrowRight size={30} className='arrig'/>
+              <ArrowRight size={35} className='arrig'/>
             </div>
           </div>
         </div>

@@ -354,7 +354,18 @@
     max-height: auto;
     padding: 8px;
   }
+.price {
+  font-size: 17px;
+  font-weight: 700;
+  color: #111;
+  margin-right: 10px;
+}
 
+.old {
+  font-size: 15px;
+  color: #9aa0a6;
+  text-decoration: line-through;
+}
   .img-box {
     height: 80px;
     margin-top: 0px;
@@ -370,10 +381,7 @@
     margin-bottom: 0%;
   }
 
-  .price {
-    font-size: 12px;
-    margin-bottom: 0%;
-  }
+ 
 
   .buy-btn {
     margin-top: 0%;

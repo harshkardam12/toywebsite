@@ -44,7 +44,7 @@ function ProductCarousel() {
                                     {"★".repeat(product.rating)}
                                     {"☆".repeat(5 - product.rating)}
                                 </div>
-                                <button className="buy-btn">Buy Now</button>
+                                <button className="buy-btn9">Buy Now</button>
                             </div>
                         </div>
                     </SwiperSlide>

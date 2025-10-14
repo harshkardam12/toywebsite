@@ -144,3 +144,23 @@
     font-size: 12px;
   }
 }
+@media(max-width:326px){
+  .small {
+  height: 7vh;
+  width: auto;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+.dropdown summary {
+    font-size: 7px;
+    margin-right: 0%;
+
+    font-weight: 500;
+
+    margin-left: 2%;
+  }
+}

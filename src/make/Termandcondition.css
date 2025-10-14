@@ -300,6 +300,15 @@
     color: rgba(33, 65, 90, 1);
     font-size: 40px;
 }
+.text1 {
+    margin-top: 60px;
+    height: auto;
+    width: 40vw;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 50px;
+    background-color: rgba(255, 251, 233, 1);
+}
 .tmg2 {
     height: 200px;
     width: auto;
@@ -484,7 +493,7 @@
     width: auto;
     margin-left: 15px;
     margin-top: 40px;
-    margin-right: 5vh;
+    margin-right: 0vh;
 }
 .span-3 {
     height: auto;

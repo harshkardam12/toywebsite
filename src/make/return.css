@@ -1,25 +1,30 @@
-.return{
+.return {
     height: auto;
     width: 100vw;
     background-color: rgba(186, 242, 255, 1);
     display: flex;
     flex-direction: column;
     align-items: center;
+    caret-color: transparent;
 }
-.write{
-display: flex;
+
+.write {
+    display: flex;
 }
-.write h1{
+
+.write h1 {
     font-size: 70px;
     margin-left: 200px;
     margin-top: 100px;
 }
-.mera{
+
+.mera {
     margin-left: 20px;
     height: 400px;
     width: auto;
 }
-.writen2 h4{
+
+.writen2 h4 {
     font-size: 28px;
     margin-bottom: 0%;
     font-weight: 400;
@@ -31,14 +36,110 @@ display: flex;
 .writen2 li {
     font-size: 20px;
 }
-.writen2 p{
+
+.writen2 p {
     font-size: 20px;
 }
-.writen2{
+
+.writen2 {
     height: auto;
     width: 80vw;
-margin-bottom: 70px;
+    border-radius: 20px;
+    margin-bottom: 70px;
     padding: 30px;
     background-color: rgba(255, 251, 233, 1);
 }
-
+@media(max-width:1025px){
+.mera {
+    margin-left: 0px;
+    height: 300px;
+    width: auto;
+}
+.write h1 {
+    font-size: 50px;
+    margin-left: 120px;
+    margin-top: 100px;
+}
+}
+@media(max-width:770px){
+.mera {
+    margin-left: 0px;
+    height: 250px;
+    width: auto;
+}
+.write h1 {
+ 
+    font-size: 40px;
+    margin-left: 70px;
+    margin-top: 100px;
+}
+}
+@media(max-width:429px){
+.mera {
+    margin-left: 0px;
+    height: 150px;
+    margin-right: -20px;
+    margin-top: 30px;
+    width: auto;
+}
+.write h1 {
+ 
+    font-size: 25px;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+.writen2 h4 {
+    font-size: 20px;
+    margin-bottom: 0%;
+    font-weight: 400;
+    margin-left: 5px;
+    font-weight: 600;
+    margin-top: 0%;
+}
+}
+@media(max-width:380px){
+.mera {
+    margin-left: 0px;
+    height: 100px;
+    margin-right: -20px;
+    margin-top: 30px;
+    width: auto;
+}
+.write h1 {
+ 
+    font-size: 21px;
+    margin-left: 20px;
+    margin-top: 80px;
+}
+.writen2 h4 {
+    font-size: 18px;
+    margin-bottom: 0%;
+    font-weight: 400;
+    margin-left: 5px;
+    font-weight: 600;
+    margin-top: 0%;
+}
+}
+@media(max-width:321px){
+.mera {
+    margin-left: 0px;
+    height: 100px;
+    margin-right: 0px;
+    margin-top: 30px;
+    width: auto;
+}
+.write h1 {
+ 
+    font-size: 21px;
+    margin-left: 20px;
+    margin-top: 80px;
+}
+.writen2 h4 {
+    font-size: 18px;
+    margin-bottom: 0%;
+    font-weight: 400;
+    margin-left: 5px;
+    font-weight: 600;
+    margin-top: 0%;
+}
+}

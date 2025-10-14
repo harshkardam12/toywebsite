@@ -35,21 +35,23 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/list" element={<Productlist />} />
           <Route path="/err" element={<Error />} />
-          <Route path="/loading" element={<Loading />} />
+          <Route path="/loading" element={<Loading />} />////
           <Route path="/ppage" element={<ProductPages />} />
           <Route path="/order" element={<Order />} />
           <Route path="/thanks" element={<Thankyou />} />
           <Route path="/checkout" element={<Checkout />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/dis" element={<Disclamer />} />
-          <Route path="/return" element={<Return />} />
-          <Route path="/faq" element={<Faq />} />
-          <Route path="/term" element={<Termandcondition />} />
+          <Route path="/privacy" element={<Privacy />} />/////
+          <Route path="/dis" element={<Disclamer />} />///////
+          <Route path="/return" element={<Return />} />//////
+          <Route path="/faq" element={<Faq />} />/////////
+          <Route path="/term" element={<Termandcondition />} />//////
         </Routes>
+<Checkout/>
         {/* <Footer /> */}
         {/* <Placeorder/> */}
-        <Productpage />
+        {/* <Productpage />///// */}
       </BrowserRouter>
+      {/* <Productlist/>///// */}
 
 
     </div>

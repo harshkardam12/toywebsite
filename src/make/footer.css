@@ -2,10 +2,10 @@
     width: 100vw;
     height: 80vh;
     /* background-image: url("../assets/back.jpg"); */
-    background-color: black;
-    background-size: 100% 120% ;
+    background-color: gray;
+    background-size: 100% 120%;
     background-repeat: no-repeat;
-    background-position: center ;
+    background-position: center;
     position: relative;
     display: flex;
     caret-color: transparent;
@@ -27,6 +27,8 @@
     z-index: 2;
     height: 30vh;
     width: 15vw;
+    margin-top: 20px;
+    margin-right: 30px;
 
     >img {
         height: 100%;
@@ -36,16 +38,20 @@
 
 
 .account {
-   padding: 2rem;
-    background-color: rgba(223, 223, 234, 0.4);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 2rem;
+    background-color: transparent;
+    box-shadow: 0px 8px 15px 5px black;
+    filter: drop-shadow(0px 0px 0px black);
     z-index: 2;
     border-radius: 2rem;
+    text-decoration: none;
+    color: black;
 }
 
 .account h3 {
     padding-top: 15px;
     font-size: 18px;
+    text-decoration: none;
     font-weight: 500;
     color: black;
 }
@@ -53,6 +59,13 @@
 .account h2 {
     font-size: 30px;
 }
+
+.account h3 a {
+    text-decoration: none;
+    color: black;
+    width: 0px;
+}
+
 
 
 .account h3:hover {
@@ -62,11 +75,14 @@
 }
 
 .service {
-   padding: 2rem;
-    background-color: rgba(223, 223, 234, 0.4);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 2rem;
+    background-color: transparent;
+    box-shadow: 0px 8px 15px 5px black;
+    filter: drop-shadow(0px 0px 0px black);
     z-index: 2;
     border-radius: 2rem;
+    text-decoration: none;
+    color: black;
 
 }
 
@@ -90,11 +106,14 @@
 }
 
 .shop {
-     padding: 2rem;
-    background-color: rgba(223, 223, 234, 0.4);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   padding: 2rem;
+    background-color: transparent;
+    box-shadow: 0px 8px 15px 5px black;
+    filter: drop-shadow(0px 0px 0px black);
     z-index: 2;
     border-radius: 2rem;
+    text-decoration: none;
+    color: black;
 }
 
 .shop h2 {
@@ -124,5 +143,3 @@
 .shop1 h3 {
     padding-top: 0%;
 }
-
-
