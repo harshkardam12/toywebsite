@@ -710,3 +710,71 @@
         font-size: 10px;
     }
 }
+/* -------- Redmi Note 13 5G (≈400px width) -------- */
+@media(max-width:400px) {
+  .tmg {
+    height: 140px;
+    width: auto;
+    margin-left: 0;
+  }
+
+  .header-1 {
+    font-size: 28px;
+    margin-left: 0;
+    margin-top: 35px;
+    text-align: center;
+  }
+
+  .tmg2 {
+    height: 115px;
+    width: auto;
+    margin-top: 35px;
+    margin-left: 5px;
+  }
+
+  .span-1,
+  .span-2,
+  .span-3 {
+    width: 75vw;
+    font-size: 13px;
+    margin-left: 6vw;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .text,
+  .text1 {
+    width: 70vw;
+    padding: 10px;
+    margin-left: 15px;
+  }
+
+  .tmg3,
+  .tmg4,
+  .tmg5,
+  .tmg6 {
+    height: 120px;
+    width: auto;
+    margin-left: 10px;
+    margin-top: 35px;
+  }
+
+  .header-2,
+  .header-3,
+  .header-4,
+  .header-5,
+  .header-6 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .para-1,
+  .para-2,
+  .para-3,
+  .para-4,
+  .para-5 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

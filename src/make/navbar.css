@@ -423,6 +423,72 @@
   }
 
 }
+@media(max-width: 400px) {
+  .navbar {
+    height: 10vh;
+  }
+
+  .hamburger {
+    margin-right: 15px;
+    margin-left: 8px;
+    cursor: pointer;
+    height: 35px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    height: 4.5vh;
+    width: 14vw;
+    margin-right: 1vh;
+  }
+
+  .bar23 {
+    height: 5.5vh;
+    width: 82vw;
+  }
+
+  .gpp button {
+    height: 3.8vh;
+    width: 17vw;
+    font-size: 13px;
+  }
+
+  .search-box {
+    width: 45vw;
+  }
+
+  .search-box input {
+    height: 2.8vh;
+    width: 12vh;
+    font-size: 13px;
+  }
+
+  .search-box .icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 16px;
+    width: 16px;
+    font-size: 13px;
+    color: #333;
+    pointer-events: none;
+  }
+
+  .sho {
+    height: 3vh;
+    width: 6vw;
+    margin-top: 5px;
+  }
+
+  .gpp {
+    padding-left: 0.8rem;
+    gap: 15px;
+    margin-right: 5px;
+  }
+}
 
 @media(max-width: 376px) {
   .navbar {

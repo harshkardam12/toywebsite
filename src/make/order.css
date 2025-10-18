@@ -546,3 +546,102 @@ color: white;
     font-size: 1.6rem;
   }
 }
+/* -------- Redmi Note 13 5G (≈400px width) -------- */
+@media (max-width: 400px) {
+  .order-container {
+    padding: 12px;
+    overflow-x: hidden;
+  }
+
+  .title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .order-card {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto 15px auto;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .order-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #000;
+  }
+
+  .order-details {
+    flex: 1;
+    margin-left: 10px;
+  }
+
+  .order-details h3 {
+    font-size: 1.1rem;
+    margin: 3px 0;
+  }
+
+  .order-id,
+  .date {
+    font-size: 0.75rem;
+  }
+
+  .price {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .order-actions {
+    align-items: flex-end;
+    gap: 5px;
+  }
+
+  .status {
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    height: auto;
+    width: auto;
+  }
+
+  .status.delivered {
+    background: green;
+    color: white;
+  }
+
+  .status.pending {
+    background: #fff3cd;
+    color: #856404;
+  }
+
+  .status.shipped {
+    background: orange;
+    color: white;
+  }
+
+  .buyn-btn22 {
+    font-size: 14px;
+    padding: 6px 10px;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    background: red;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .buyn-btn22:hover {
+    background: rgb(160, 0, 0);
+  }
+}

@@ -143,3 +143,38 @@
     margin-top: 0%;
 }
 }
+@media(max-width:400px) {
+  .mera {
+    margin-left: 0px;
+    height: 110px;
+    margin-right: -15px;
+    margin-top: 30px;
+    width: auto;
+  }
+
+  .write h1 {
+    font-size: 23px;
+    margin-left: 25px;
+    margin-top: 80px;
+  }
+
+  .writen2 {
+    width: 85vw;
+    padding: 25px;
+    border-radius: 18px;
+  }
+
+  .writen2 h4 {
+    font-size: 18.5px;
+    margin-bottom: 0%;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-top: 0%;
+  }
+
+  .writen2 p,
+  .writen2 li {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+}

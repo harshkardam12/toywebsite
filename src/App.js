@@ -22,6 +22,8 @@ import ProductPages from './component/Productpage';
 import Productlist from './component/Productlist';
 import Placeorder from './component/Placeorder';
 import Productpage from './component/Productpage';
+import Bear from './component/Bear';
+import ProductCarousel from './component/Product';
 function App() {
   return (
     <div className="App">
@@ -47,9 +49,10 @@ function App() {
           <Route path="/term" element={<Termandcondition />} />//////
         </Routes>
         {/* <Footer /> */}
-        <Contact />
-        {/* <Placeorder/> */}
+        {/* <Contact /> */}
+          {/* <Placeorder/> */}
         {/* <Productpage />///// */}
+        <About />
       </BrowserRouter>
 
 
