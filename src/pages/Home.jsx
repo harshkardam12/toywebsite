@@ -11,12 +11,12 @@ function Home() {
 
   return (
  <div >  
-           {/* <Small />//// */}
+           {/* <Small /> */}
      
-         {/* <Content />////// */}
+         {/* <Content /> */}
         {/* <ProductCarousel /> */}
-        {/* <Class />////// */}
-        {/* <Bear /> ///// */}
+        {/* <Class /> */}
+        {/* <Bear />  */}
     </div>
   )
 }

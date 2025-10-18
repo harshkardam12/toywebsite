@@ -127,7 +127,7 @@
   }
 
   .dropdown summary {
-    font-size: 7px;
+    font-size: 9px;
     margin-right: 0%;
 
     font-weight: 700;
@@ -144,10 +144,10 @@
     font-size: 12px;
   }
 }
-@media(max-width:326px){
+@media(max-width:380px){
   .small {
   height: 7vh;
-  width: auto;
+  width: 120vw;
   background-color: aliceblue;
   display: flex;
   justify-content: space-around;
@@ -156,7 +156,27 @@
   font-family: "Poppins", sans-serif;
 }
 .dropdown summary {
-    font-size: 7px;
+    font-size: 10px;
+    margin-right: 0%;
+
+    font-weight: 500;
+
+    margin-left: 9px;
+  }
+}
+@media(max-width:326px){
+  .small {
+  height: 7vh;
+  width:120vw;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+.dropdown summary {
+    font-size: 10px;
     margin-right: 0%;
 
     font-weight: 500;

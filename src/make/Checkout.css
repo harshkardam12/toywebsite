@@ -1,6 +1,6 @@
 .checkout {
     caret-color: transparent;
-    height: 230vh;
+    height: auto;
     width: 100vw;
     background-color: rgba(186, 242, 255, 1);
 }
@@ -40,7 +40,7 @@
 
 .lite h2 {
     font-size: 30px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
     color: rgba(2, 68, 110, 1);
 }
@@ -123,64 +123,502 @@
     margin-left: 65vw;
     margin-top: -5vh;
 }
-.total-box{
+
+.total-box {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 22vh;
-    border-bottom-left-radius:40px ;
-    border-bottom-right-radius:40px ;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     width: 80vw;
     padding-bottom: 40px;
     background-color: rgba(255, 247, 211, 1);
 }
 
 
-.total-box h2{
+.total-box h2 {
     font-size: 35px;
     margin-top: 0%;
     color: rgba(2, 68, 110, 1);
 }
-.total-box h5{
+
+.total-box h5 {
     font-size: 30px;
-    
+    margin-left: 160px;
     color: rgba(2, 68, 110, 1);
 }
-.total button{
+
+.total button {
     height: 6vh;
     width: 10vw;
     font-size: 20px;
     border: none;
+    margin-left: 160px;
+
+    margin-top: 20px;
     border-radius: 20px;
     background-color: rgba(252, 222, 63, 1);
     cursor: pointer;
     color: rgba(2, 68, 110, 1);
     font-weight: 700;
-    
+
 }
-.total button:hover{
+
+.total button:hover {
     background-color: rgb(204, 172, 12);
-    
+
 }
+
 .lower21 {
-  display: flex;
-  justify-content: space-around;
-  padding: 50px;
-  background-color: rgba(186, 242, 255, 1);
-  height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: rgba(186, 242, 255, 1);
+    height: auto;
 }
 
 
-.low1{
+.low1 {
     height: 400px;
     width: 400px;
 }
-.low2{
+
+.low2 {
     height: 340px;
     width: 350px;
     margin-top: 20px;
 }
+
 .low12 {
-  height: 400px;
-  width: 400px;
-  transform: scaleX(-1); }
+    height: 400px;
+    width: 400px;
+    transform: scaleX(-1);
+}
+
+@media(max-width:1025px) {
+    .low1 {
+        height: 300px;
+        width: auto;
+    }
+
+    .low2 {
+        height: 300px;
+        width: auto;
+        margin-top: 20px;
+    }
+
+    .low12 {
+        height: 300px;
+        width: auto;
+        transform: scaleX(-1);
+    }
+
+    .check-name {
+        margin-top: -15vh;
+        font-size: 30px;
+        margin-left: 28vh;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 700;
+        color: rgba(2, 68, 110, 1);
+    }
+
+    .check-price {
+        margin-left: 28vh;
+        margin-top: -10px;
+        font-size: 25px;
+        color: rgba(2, 68, 110, 1);
+    }
+
+    .check-img {
+        margin-left: 10px;
+        margin-top: 40px;
+        height: 20vh;
+        width: auto;
+
+    }
+
+    .countr {
+        display: flex;
+        margin-left: 50vh;
+        margin-top: -10vh;
+        height: 5vh;
+        font-size: 25px;
+        border: 5px solid rgba(2, 68, 110, 1);
+        justify-content: center;
+        width: 13vw;
+        background-color: white;
+        align-items: center;
+        border-radius: 20px;
+    }
+}
+
+
+
+/* =================== TABLET (≤768px) =================== */
+@media(max-width:768px) {
+
+    .frst,
+    .dou,
+    .tri {
+        width: 28vw;
+        height: 30vh;
+    }
+
+    .lite {
+        width: 95vw;
+        height: 9vh;
+        margin-left: 2vw;
+        border-radius: 40px;
+    }
+
+    .lite h2 {
+        font-size: 22px;
+    }
+
+    .check {
+        width: 85vw;
+        height: 30vh;
+        border-bottom: 4px solid red;
+    }
+
+    .check-img {
+        height: 16vh;
+        width: auto;
+    }
+
+    .check-name {
+        font-size: 24px;
+        margin-left: 20vh;
+        margin-top: -12vh;
+    }
+
+    .check-price {
+        font-size: 20px;
+        margin-left: 20vh;
+    }
+
+    .countr {
+        margin-left: 38vh;
+        width: 15vw;
+        height: 4.5vh;
+        font-size: 20px;
+        border-radius: 10px;
+
+    }
+
+    .countr button {
+        margin: 20px;
+        border: none;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 20px;
+
+    }
+
+    .subtotal {
+        font-size: 20px;
+        margin-left: 65vw;
+    }
+
+    .total-box {
+        width: 85vw;
+        height: 18vh;
+    }
+
+    .total-box h2 {
+        font-size: 26px;
+    }
+
+    .total-box h5 {
+        font-size: 22px;
+    }
+
+    .total button {
+        width: 15vw;
+        font-size: 16px;
+    }
+
+    .low1,
+    .low12 {
+        height: 225px;
+        width: 280px;
+    }
+
+    .low2 {
+        height: 260px;
+        width: 260px;
+    }
+}
+
+/* =================== MOBILE LARGE (≤480px) =================== */
+@media(max-width:480px) {
+
+    .frst,
+    .dou,
+    .tri {
+        width: auto;
+        height: 15vh;
+    }
+
+    .lite {
+        width: 94vw;
+        height: 8vh;
+        margin-left: 3vw;
+        border-radius: 30px;
+    }
+
+    .lite h2 {
+        font-size: 17px;
+    }
+
+    .check {
+        width: 90vw;
+        height: 30vh;
+    }
+
+    .check-img {
+        height: 12vh;
+        width: 20vw;
+        margin-left: -20px;
+    }
+
+    .check-name {
+        font-size: 16px;
+        margin-left: -15px;
+        margin-top: 3vh;
+    }
+
+    .check-price {
+        font-size: 15px;
+        margin-left: 10vh;
+        margin-top: -12vh;
+
+    }
+
+    .countr {
+        margin-top: -5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-left: 22vh;
+        width: 5vw;
+        height: 4vh;
+        font-size: 16px;
+        border: 2px solid rgba(2, 68, 110, 1);
+        border-radius: 20px;
+    }
+
+    .countr p {
+        margin: 0;
+        font-weight: 600;
+        color: rgba(2, 68, 110, 1);
+    }
+
+    .countr button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        border: 3px solid rgba(2, 68, 110, 1);
+        display: flex;
+        margin: 2px;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .subtotal {
+        margin-top: -6vw;
+        font-size: 16px;
+        margin-left: 62vw;
+    }
+
+    .total-box {
+        width: 90vw;
+        height: 15vh;
+    }
+
+    .total-box h2 {
+        font-size: 20px;
+    }
+
+    .total-box h5 {
+        font-size: 18px;
+    }
+
+    .total button {
+        width: 25vw;
+        height: 5vh;
+        font-size: 14px;
+    }
+
+    .lower21 {}
+
+    .low1,
+    .low12 {
+        height: 180px;
+        width: 130px;
+        margin-left: -10px;
+    }
+
+    .low2 {
+        height: 180px;
+        width: 100px;
+    }
+}
+
+/* =================== MOBILE SMALL (≤414px) =================== */
+@media(max-width:414px) {
+    .lite h2 {
+        font-size: 17px;
+    }
+
+    .check-name {
+        font-size: 16px;
+        margin-left: 0vh;
+        margin-top: vh;
+    }
+
+    .check-img {
+        height: 8vh;
+        width: auto;
+        margin-left: -20px;
+    }
+
+    .check-price {
+        font-size: 13px;
+        margin-left: 8vh;
+        margin-top: -12vh;
+    }
+
+    .countr {
+        font-size: 14px;
+
+        margin-left: 18vh;
+    }
+
+    .countr p {
+        margin: 0;
+        font-weight: 500;
+        color: rgba(2, 68, 110, 1);
+    }
+
+    .countr button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        border: 3px solid rgba(2, 68, 110, 1);
+        display: flex;
+        margin: 2px;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .total-box h2 {
+        font-size: 18px;
+    }
+
+    .total-box h5 {
+        font-size: 16px;
+    }
+
+    .total button {
+        width: 28vw;
+        font-size: 13px;
+    }
+}
+
+/* =================== EXTRA SMALL (≤375px) =================== */
+@media(max-width:378px) {
+    .lite h2 {
+        font-size: 15px;
+    }
+
+    .check-name {
+        font-size: 14px;
+        margin-left: 0vh;
+        margin-top: 1vh;
+    }
+
+    .check-img {
+        height: 7vh;
+        width: auto;
+        margin-left: -18px;
+    }
+
+    .subtotal {
+        margin-top: -6vw;
+        font-size: 15px;
+        margin-left: 62vw;
+    }
+
+    .check-price {
+        font-size: 11px;
+        margin-left: 6vh;
+        margin-top: -10vh;
+    }
+
+    .countr {
+        font-size: 12px;
+        margin-left: 16vh;
+    }
+
+    .countr p {
+        margin: 0;
+        font-weight: 500;
+        color: rgba(2, 68, 110, 1);
+    }
+
+    .countr button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        border: 2px solid rgba(2, 68, 110, 1);
+        display: flex;
+        margin: 2px;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .total-box h2 {
+        font-size: 15px;
+    }
+
+    .total-box h5 {
+        font-size: 13px;
+        margin-left: 100px;
+    }
+
+    .total button {
+        width: 30vw;
+        margin-left: 70px;
+        font-size: 14px;
+    }
+
+    /* Upar aur niche ke images ka size */
+    .low1,
+    .low12 {
+        height: 130px;
+        width: 100px;
+        margin-left: -20px;
+    }
+
+    .low2 {
+        height: 100px;
+        width: 100px;
+    }
+
+    /* Upar wali images (frst, dou, tri) ka size */
+    .frst,
+    .dou,
+    .tri {
+        height: 12vh;
+        width: auto;
+    }
+}

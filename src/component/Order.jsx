@@ -85,7 +85,7 @@ const Order = () => {
             <span className={`status ${order.status.toLowerCase()}`}>
               {order.status}
             </span>
-            <button className="buyn-btn">Buy Again</button>
+            <button className="buyn-btn22">Buy Again</button>
           </div>
         </div>
       ))

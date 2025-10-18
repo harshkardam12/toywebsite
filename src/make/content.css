@@ -1,9 +1,10 @@
 .content {
-    height: 165vh;
+    height: auto;
     width: 100vw;
     background-color: rgba(186, 242, 255, 1);
     padding-top: 0%;
     margin-top: 0%;
+    padding-bottom: 40px;
 }
 
 .content header {
@@ -90,19 +91,34 @@ position: relative;
 }
 
 @media(max-width:768px) {
+    .content {
+    height: auto;
+    width: 100vw;
+    background-color: rgba(186, 242, 255, 1);
+    padding-top: 0%;
+    margin-top: 0%;
+}
+    .circle {
+        height: auto;
+        width: 100vw;
+        background-color: rgba(186, 242, 255, 1);
+        display: flex;
+        justify-content: space-evenly;
+    }
     .sideimg {
-        height: 60vh;
+
+        height: 50vh;
         width: 30vw;
         margin-right: -20px;
     }
 
     .centerimg {
-        height: 80vh;
+        height: 70vh;
         width: 40vw;
     }
 
     .rightimg {
-        height: 60vh;
+        height: 50vh;
         width: 30vw;
         margin-left: -20px;
     }
@@ -138,7 +154,7 @@ position: relative;
 
 @media(max-width:426px) {
     .content {
-    height: 165vh;
+    height: auto;
     width: 100vw;
     background-color: rgba(186, 242, 255, 1);
     padding-top: 0%;
@@ -154,24 +170,24 @@ position: relative;
     caret-color: transparent;
 }
     .sideimg {
-        height: 40vh;
+        height: 35vh;
         width: 30vw;
         margin-right: -0px;
     }
 
     .centerimg {
-        height: 50vh;
+        height: 40vh;
         width: 40vw;
     }
 
     .rightimg {
-        height: 40vh;
+        height: 35vh;
         width: 30vw;
         margin-left: 0px;
     }
 
     .circle {
-        height: 85vh;
+        height: 65vh;
         width: 100vw;
         background-color: rgba(186, 242, 255, 1);
         display: flex;
@@ -213,5 +229,43 @@ position: relative;
         margin-left: 0px;
         text-align: center;
         cursor: pointer;
+    }
+}
+@media(max-width:380px){
+    .content {
+    height: auto;
+    width: 100vw;
+    background-color: rgba(186, 242, 255, 1);
+    padding-top: 0%;
+    margin-top: 0%;
+}
+.circle {
+        height: auto;
+        padding-bottom: 30px;
+        width: 100vw;
+        background-color: rgba(186, 242, 255, 1);
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
+@media(max-width:322px){
+.box {
+        height: 120px;
+        width: 120px;
+        background-color: transparent;
+        border-radius: 100%;
+        margin-top: 50px;
+        box-shadow: 0px 2px 10px 2px black;
+        caret-color: transparent;
+        cursor: pointer;
+        filter: drop-shadow(5px 5px 10px black);
+
+        >img {
+            height: 130px;
+            width: 130px;
+            margin-left: -10px;
+            margin-top: -20px;
+        }
     }
 }

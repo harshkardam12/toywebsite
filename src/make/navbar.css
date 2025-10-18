@@ -12,7 +12,7 @@
 .hamburger {
   cursor: pointer;
   display: flex;
-margin-right: 60px;
+  margin-right: 60px;
   align-items: center;
 }
 
@@ -153,7 +153,7 @@ margin-right: 60px;
   }
 }
 
-.bar {
+.bar23 {
   height: 9vh;
   border-radius: 40px;
   width: 40vw;
@@ -236,8 +236,9 @@ margin-right: 60px;
   padding-left: 8rem;
   gap: 80px;
 }
+
 @media (max-width: 1024px) {
-  .bar {
+  .bar23 {
     height: 8vh;
     width: 38vw;
   }
@@ -254,6 +255,7 @@ margin-right: 60px;
     width: 10vw;
     font-size: 18px;
   }
+
   .hamburger {
     margin-right: 40px;
     margin-left: 0px;
@@ -272,15 +274,16 @@ margin-right: 60px;
     width: 6vw;
     margin-right: 10vh;
   }
+
   .search-box .icon {
-  position: absolute;
-  left: 35px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 18px;
-  color: #333;
-  pointer-events: none;
-}
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #333;
+    pointer-events: none;
+  }
 
   .gpp {
     padding-left: 4.5rem;
@@ -289,7 +292,7 @@ margin-right: 60px;
 }
 
 @media(max-width: 768px) {
-  .navbar {
+  .navbar23 {
     height: 10vh;
   }
 
@@ -304,11 +307,11 @@ margin-right: 60px;
 
   .logo {
     height: 5vh;
-    width: 6vw;
-    margin-right: 10vh;
+    width: auto;
+    margin-right: 5vh;
   }
 
-  .bar {
+  .bar23 {
     height: 7vh;
     width: 60vw;
   }
@@ -328,15 +331,16 @@ margin-right: 60px;
     width: 30vh;
     font-size: 16px;
   }
+
   .search-box .icon {
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 18px;
-  color: #333;
-  pointer-events: none;
-}
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #333;
+    pointer-events: none;
+  }
 
   .sho {
     height: 4vh;
@@ -350,10 +354,12 @@ margin-right: 60px;
   }
 
 }
+
 @media(max-width: 426px) {
   .navbar {
     height: 10vh;
   }
+
   .hamburger {
     margin-right: 20px;
     margin-left: 10px;
@@ -367,11 +373,11 @@ margin-right: 60px;
 
   .logo {
     height: 5vh;
-    width: 10vw;
-    margin-right: 2vh;
+    width: auto;
+    margin-right: 1vh;
   }
 
-  .bar {
+  .bar23 {
     height: 5.5vh;
     width: 80vw;
   }
@@ -388,23 +394,25 @@ margin-right: 60px;
 
   .search-box input {
     height: 3vh;
-    width: 20vh;
+    width: 15vh;
     font-size: 14px;
   }
+
   .search-box .icon {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  height: 20px;
-  width: 20px;
-  transform: translateY(-50%);
-  font-size: 14px;
-  color: #333;
-  pointer-events: none;
-}
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    height: 20px;
+    width: 20px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #333;
+    pointer-events: none;
+  }
 
   .sho {
-    height: 4vh;
+    height: auto;
+    margin-top: 5px;
     width: 6vw;
   }
 
@@ -415,6 +423,7 @@ margin-right: 60px;
   }
 
 }
+
 @media(max-width: 376px) {
   .navbar {
     height: 10vh;
@@ -437,7 +446,7 @@ margin-right: 60px;
     margin-right: 1vh;
   }
 
-  .bar {
+  .bar23 {
     height: 5vh;
     width: 80vw;
   }
@@ -454,20 +463,21 @@ margin-right: 60px;
 
   .search-box input {
     height: 2.5vh;
-    width: 15vh;
+    width: 13vh;
     font-size: 12px;
   }
+
   .search-box .icon {
-  position: absolute;
-  left: 25px;
-  top: 50%;
-  height: 15px;
-  width: 15px;
-  transform: translateY(-50%);
-  font-size: 12px;
-  color: #333;
-  pointer-events: none;
-}
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    height: 15px;
+    width: 15px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #333;
+    pointer-events: none;
+  }
 
   .sho {
     height: 3vh;
@@ -481,4 +491,21 @@ margin-right: 60px;
     margin-right: 5px;
   }
 
+}
+@media(max-width:322px){
+.search-box input {
+    height: 2.5vh;
+    width: 10vh;
+    font-size: 12px;
+  }
+  .gpp button {
+    height: 4vh;
+    width: auto;
+    font-size: 13px;
+  }
+.logo {
+    height: 3.5vh;
+    width: 12vw;
+    margin-right: 1vh;
+  }
 }

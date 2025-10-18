@@ -19,7 +19,7 @@ function Navbar() {
             <div className='logo'>
                 <img src={Logo} alt="logo" />
             </div>
-            <div className='bar'>
+            <div className='bar23'>
 
 
                 {isOpen && <div className="overlay" onClick={() => setIsOpen(false)}></div>}

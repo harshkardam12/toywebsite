@@ -74,7 +74,7 @@
     color: #b38f00;
 }
 
-.buyn-btn {
+.buyn-btn22 {
     background: #ff4444;
     color: #fff;
     border: none;
@@ -242,7 +242,7 @@ color: white;
 }
 
 /* Buy button */
-.buyn-btn {
+.buyn-btn22 {
     padding: 6px 12px;
     background: red;
     margin-top: 30px;
@@ -256,7 +256,7 @@ color: white;
     transition: 0.3s;
 }
 
-.buyn-btn:hover {
+.buyn-btn22:hover {
     background: rgb(164, 3, 3);
 }
 
@@ -279,6 +279,22 @@ color: white;
    background-color: rgba(32, 88, 110, 1);
 }
 
+@media(max-width:1025px){
+.buyn-btn22 {
+    padding: 6px 12px;
+    background: red;
+    margin-top: 30px;
+    height: 5vh;
+    width: 9vw;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+}
 @media(max-width:770px){
 .order-card {
     width: 600px;
@@ -321,7 +337,7 @@ color: white;
     
     background-color: orange;
 }
-.buyn-btn {
+.buyn-btn22 {
     padding: 6px 12px;
     background: red;
     margin-top: 30px;
@@ -356,4 +372,177 @@ color: white;
     border-radius: 8px;
     border: 2px solid #000;
 }
+.status.delivered {
+    width: auto;
+    font-size: 15px;
+    display: flex;
+        padding: 6px 12px;
+
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    background: green;
+    color: white;
+}
+.status.pending {
+    background: #fff3cd;
+    color: #856404;
+     width: auto;
+    font-size: 15px;
+        padding: 6px 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh; 
+}
+.status.shipped {
+ width: auto;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+        padding: 6px 12px;
+
+    background-color: orange;
+}
+.buyn-btn22 {
+    padding: 6px 12px;
+    background: red;
+    margin-top: 30px;
+    height: 5vh;
+    width: auto;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+}
+/* For 375px screens (mobile medium like iPhone X) */
+@media (max-width: 376px) {
+  .order-container {
+    padding: 10px;
+    overflow-x: hidden;
+  }
+
+  .order-card {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto 15px auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  }
+
+  .order-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+
+  .order-details {
+    flex: 1;
+    margin-left: 8px;
+  }
+
+  .order-details h3 {
+    font-size: 1rem;
+    margin: 2px 0;
+  }
+
+  .order-id, .date {
+    font-size: 0.7rem;
+  }
+
+  .price {
+    font-size: 0.9rem;
+  }
+
+  .order-actions {
+    align-items: flex-end;
+    gap: 5px;
+  }
+
+  .status {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .buyn-btn22 {
+    padding: 5px 10px;
+    font-size: 13px;
+    height: auto;
+    width: auto;
+    margin-top: 10px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+}
+
+
+/* For 320px screens (small mobile like iPhone SE, Redmi mini) */
+@media (max-width: 321px) {
+  .order-container {
+    padding: 8px;
+    overflow-x: hidden;
+  }
+
+  .order-card {
+    width: 100%;
+    max-width: 290px;
+    padding: 8px;
+    gap: 8px;
+    margin: 0 auto 12px auto;
+  }
+
+  .order-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .order-details {
+    margin-left: 6px;
+  }
+
+  .order-details h3 {
+    font-size: 0.95rem;
+  }
+
+  .order-id, .date {
+    font-size: 0.65rem;
+  }
+
+  
+  .price {
+    font-size: 0.8rem;
+  }
+
+  .status {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    border-radius: 5px;
+  }
+
+  .buyn-btn22 {
+    font-size: 12px;
+    padding: 5px 8px;
+    margin-top: 8px;
+    height: 5vh;
+    width: auto;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
 }

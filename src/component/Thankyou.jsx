@@ -12,7 +12,34 @@ const Thanks = [
     price: "Rs. 299 /-",
     status: "Shipped",
     add: "Hrythm Raj Sharma, 1234 Nehru Road, Baraut 250611, Uttar Pradesh",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxcJbs8mMb4K_NmTCGsGIJPb5YaVnr5CXz7g&s",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0GHqHhjCYxkUaNJDhEEMPnhbKp9c60loapw&s",
+  },
+  {
+    id: "#1jj23456",
+    name: "Teddy Bear",
+    date: "March 15, 2025",
+    price: "Rs. 299 /-",
+    status: "Shipped",
+    add: "Hrythm Raj Sharma, 1234 Nehru Road, Baraut 250611, Uttar Pradesh",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0GHqHhjCYxkUaNJDhEEMPnhbKp9c60loapw&s",
+  },
+  {
+    id: "#1jj23456",
+    name: "Teddy Bear",
+    date: "March 15, 2025",
+    price: "Rs. 299 /-",
+    status: "Shipped",
+    add: "Hrythm Raj Sharma, 1234 Nehru Road, Baraut 250611, Uttar Pradesh",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0GHqHhjCYxkUaNJDhEEMPnhbKp9c60loapw&s",
+  },
+  {
+    id: "#1jj23456",
+    name: "Teddy Bear",
+    date: "March 15, 2025",
+    price: "Rs. 299 /-",
+    status: "Shipped",
+    add: "Hrythm Raj Sharma, 1234 Nehru Road, Baraut 250611, Uttar Pradesh",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0GHqHhjCYxkUaNJDhEEMPnhbKp9c60loapw&s",
   }
 ];
 
@@ -32,15 +59,15 @@ const Thankyou = () => {
           <div className="order-card" key={item.id}>
             <div className="order-top">
               <div className="order-id">Order {item.id}</div>
-              <img src={item.img} alt={item.name} className="item-img" />
+              <img src={item.img} alt={item.name} className="item-img00" />
 
               <div className="order-info">
                 <h4>{item.name}</h4>
-                <h7 className="prices">{item.price}</h7>
+                <h7 className="pricess">{item.price}</h7>
                 <h6 className="qty">Quantity : 1</h6>
                 <div className="btns">
                   <span className={`status ${item.status.toLowerCase()}`}>{item.status}</span>
-                  <button className="buyn-btn">Buy Again</button>
+                  <button className="buyno-btn">Buy Again</button>
                 </div>
                 <h5>Delivery address :</h5>
                 <header>{item.add}</header>
