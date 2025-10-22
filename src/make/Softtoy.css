@@ -1,9 +1,8 @@
-/* ────────────── CONTAINER ────────────── */
+/* ────────────── MAIN CONTAINER ────────────── */
 .softtoys-container {
     display: flex;
     width: 100%;
     height: 100%;
-    /* background cover */
     gap: 20px;
     align-items: flex-start;
     caret-color: transparent;
@@ -16,14 +15,12 @@
     width: 100vw;
     background: rgba(186, 242, 255, 1);
     padding-bottom: 30px;
-    
 }
 
 .softtoys-header h2 {
     margin-top: 0%;
     text-align: center;
     font-size: 45px;
-    
     padding-top: 40px;
     font-weight: 700;
     color: rgba(32, 88, 110, 1);
@@ -47,7 +44,7 @@
     font-size: 25px;
 }
 
-/* Age Buttons */
+/* ────────────── AGE BUTTONS ────────────── */
 .softtoys-age-group {
     display: flex;
     flex-wrap: wrap;
@@ -86,7 +83,7 @@
     background: rgba(150, 137, 229, 1);
 }
 
-/* Range Slider */
+/* ────────────── RANGE SLIDER ────────────── */
 .softtoys-range {
     -webkit-appearance: none;
     width: 100%;
@@ -118,7 +115,7 @@
     cursor: pointer;
 }
 
-/* Filters */
+/* ────────────── FILTERS ────────────── */
 .softtoys-filters {
     list-style: none;
     padding: 0;
@@ -152,18 +149,16 @@
     background: rgb(183, 74, 24);
 }
 
-/* ────────────── PRODUCT AREA ────────────── */
+/* ────────────── PRODUCT GRID ────────────── */
 .softtoys-products {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* default 3 cards */
     gap: 20px;
     min-height: 100vh;
-    /* ensure background fills container */
 }
 
-/* Card Design */
+/* ────────────── PRODUCT CARD ────────────── */
 .softtoys-card {
     padding: 12px;
     border-radius: 10px;
@@ -213,7 +208,7 @@
     text-decoration: line-through;
 }
 
-/* Actions */
+/* ────────────── ACTION BUTTONS ────────────── */
 .softtoys-actions {
     margin-top: auto;
     display: flex;
@@ -234,17 +229,9 @@
     border-radius: 8px;
     cursor: pointer;
 }
-.softtoys-buy-btn :hover{
-  background: rgb(41, 130, 165);
-    color: #fff;
-    border: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    cursor: pointer;
+
+.softtoys-buy-btn:hover {
+    background: rgb(41, 130, 165);
 }
 
 .softtoys-like-btn {
@@ -254,7 +241,6 @@
     transition: transform 0.2s ease;
 }
 
-
 .softtoys-like-btn.liked svg {
     fill: red;
     color: red;
@@ -262,178 +248,52 @@
 
 /* ────────────── RESPONSIVE ────────────── */
 
-/* Medium Screens <= 768px */
+/* ✅ 1024px - Tablet Landscape */
+@media (max-width: 1024px) {
+    .softtoys-products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .softtoys-sidebar {
+        flex: 0 0 25%;
+    }
+}
+
+/* ✅ 768px - Tablet Portrait */
 @media (max-width: 768px) {
     .softtoys-products {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
 
     .softtoys-card {
         padding: 10px;
-        min-height: 200px;
+        min-height: 220px;
     }
 
     .softtoys-image-box {
         height: 100px;
     }
-
-    .softtoys-pname {
-        font-size: 14px;
-    }
-
-    .softtoys-price {
-        font-size: 14px;
-    }
-
-    .softtoys-buy-btn {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
 }
 
-/* Small Screens <= 429px */
-@media (max-width: 429px) {
-    .softtoys-container {
-        flex-wrap: nowrap;
-    }
-
-    /* always sidebar left */
-    .softtoys-sidebar {
-        flex: 0 0 30%;
-        width: 10vw;
-        margin: 0%;
-        max-height: none;
-        position: sticky;
-        top: 0;
-    }
-
-    .softtoys-sidebar h3 {
-        font-size: 17px;
-    }
-
-    .softtoys-age-btn {
-        padding: 8px 12px;
-        border-radius: 20px;
-        border: 0;
-        cursor: pointer;
-        background: #f2f4f6;
-        font-size: 12px;
-        transition: 0.3s ease;
-    }
-
-    .softtoys-age-btn.pink {
-        height: 5vh;
-        width: 8vw;
-        padding: 0%;
-        background: rgba(249, 217, 221, 1);
-    }
-
-    .softtoys-age-btn.blue {
-        height: 5vh;
-        width: 8vw;
-        padding: 0%;
-        background: rgba(186, 242, 255, 1);
-    }
-
-    .softtoys-age-btn.yellow {
-        height: 5vh;
-        width: 8vw;
-        padding: 0%;
-        background: rgba(255, 242, 171, 1);
-    }
-
-    .softtoys-age-btn.purple {
-        height: 5vh;
-        width: 8vw;
-        padding: 0%;
-        background: rgba(150, 137, 229, 1);
-    }
-
-    .softtoys-apply-btn {
-        width: 100%;
-        background: rgba(238, 132, 82, 1);
-        color: #fff;
-        border: 0;
-        height: 6vh;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        font-size: 15px;
-        cursor: pointer;
-        font-weight: 400;
-    }
-
-    .softtoys-apply-btn:hover {
-        background: rgb(183, 74, 24);
-    }
-
-    .softtoys-products {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        min-height: auto;
-    }
-
-    .softtoys-card {
-        max-height: auto;
-        padding: 8px;
-    }
-
-    .softtoys-price {
-        font-size: 17px;
-        font-weight: 700;
-        color: #111;
-        margin-right: 10px;
-    }
-
-    .softtoys-old {
-        font-size: 15px;
-        color: #9aa0a6;
-        text-decoration: line-through;
-    }
-
-    .softtoys-image-box {
-        height: 80px;
-        margin-top: 0px;
-    }
-
-    .softtoys-pname {
-        font-size: 13px;
-    }
-
-    .softtoys-card h4 {
-        margin-top: 0%;
-        font-size: 15px;
-        margin-bottom: 0%;
-    }
-
-    .softtoys-buy-btn {
-        margin-top: 0%;
-        font-size: 11px;
-        padding: 4px 8px;
-    }
-}
-
-/* Extra Small Screens <= 375px */
-@media (max-width: 376px) {
+/* ✅ 425px - Small Phones */
+@media (max-width: 426px) {
     .softtoys-container {
         flex-direction: row;
-        /* sidebar left */
-        padding: 8px;
         gap: 8px;
+        padding: 8px;
     }
 
     .softtoys-sidebar {
-        flex: 0 0 35%;
-        /* left sidebar */
-        width: 35%;
-        padding: 8px;
+        flex: 0 0 38%;
+        width: 38%;
+        padding: 6px;
     }
 
     .softtoys-products {
         flex: 1;
-        grid-template-columns: 1fr;
-        /* 1 product per row */
+        grid-template-columns: repeat(2, 1fr);
         gap: 8px;
     }
 
@@ -442,7 +302,7 @@
     }
 
     .softtoys-image-box {
-        height: 90px;
+        height: 85px;
     }
 
     .softtoys-card h4,
@@ -451,39 +311,47 @@
     }
 
     .softtoys-price {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .softtoys-old {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .softtoys-buy-btn {
         font-size: 11px;
-        padding: 5px;
+        padding: 5px 8px;
+    }
+
+    .softtoys-age-btn {
+        font-size: 12px;
+        padding: 5px 7px;
+    }
+
+    .softtoys-apply-btn {
+        font-size: 13px;
+        height: 5vh;
     }
 }
 
-/* Extra Small Screens <= 320px */
-@media (max-width: 320px) {
+
+/* ✅ 400px - Medium Phones */
+@media (max-width: 400px) {
     .softtoys-container {
         flex-direction: row;
-        /* sidebar left */
-        padding: 6px;
         gap: 6px;
+        padding: 6px;
     }
 
     .softtoys-sidebar {
         flex: 0 0 40%;
-        /* left sidebar */
         width: 40%;
-        padding: 6px;
+        padding: 5px;
     }
 
     .softtoys-products {
         flex: 1;
         grid-template-columns: 1fr;
-        /* 1 product per row */
         gap: 6px;
     }
 
@@ -495,21 +363,84 @@
         height: 80px;
     }
 
-    .softtoys-card h4,
-    .softtoys-pname {
+    .softtoys-pname,
+    .softtoys-card h4 {
         font-size: 12px;
-    }
-
-    .softtoys-price {
-        font-size: 12px;
-    }
-
-    .softtoys-old {
-        font-size: 11px;
     }
 
     .softtoys-buy-btn {
         font-size: 10px;
         padding: 4px 5px;
+    }
+
+    .softtoys-age-btn {
+        font-size: 11px;
+        padding: 4px 6px;
+    }
+
+    .softtoys-apply-btn {
+        font-size: 12px;
+        height: 5vh;
+    }
+}
+
+/* ✅ 375px - Small Phones */
+@media (max-width: 375px) {
+    .softtoys-container {
+        flex-direction: row;
+        gap: 6px;
+        padding: 6px;
+    }
+
+    .softtoys-sidebar {
+        flex: 0 0 40%;
+        width: 40%;
+        padding: 5px;
+    }
+
+    .softtoys-products {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .softtoys-card {
+        padding: 5px;
+    }
+
+    .softtoys-image-box {
+        height: 75px;
+    }
+}
+
+/* ✅ 320px - Extra Small Phones */
+@media (max-width: 320px) {
+    .softtoys-container {
+        flex-direction: row;
+        gap: 4px;
+        padding: 4px;
+    }
+
+    .softtoys-sidebar {
+        flex: 0 0 45%;
+        width: 45%;
+        padding: 4px;
+    }
+
+    .softtoys-products {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .softtoys-card {
+        padding: 4px;
+    }
+
+    .softtoys-image-box {
+        height: 70px;
+    }
+
+    .softtoys-buy-btn {
+        font-size: 9px;
+        padding: 3px 4px;
     }
 }

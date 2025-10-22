@@ -5,7 +5,7 @@ import { ShoppingCart, Heart } from "lucide-react";
 
 const Outdoortoy = () => {
   const [likedItems, setLikedItems] = useState([]);
-  const [price, setPrice] = useState(5000);
+  const [maxPrice, setMaxPrice] = useState(5000);
 
   const products = [
     { id: 31, name: "Frisbee", price: 199, oldPrice: 299, image: "https://via.placeholder.com/300x200?text=Frisbee" },
@@ -17,11 +17,7 @@ const Outdoortoy = () => {
     { id: 37, name: "Scooter", price: 1499, oldPrice: 1799, image: "https://via.placeholder.com/300x200?text=Scooter" },
     { id: 38, name: "Badminton Set", price: 599, oldPrice: 799, image: "https://via.placeholder.com/300x200?text=Badminton+Set" },
     { id: 39, name: "Hula Hoop", price: 219, oldPrice: 299, image: "https://via.placeholder.com/300x200?text=Hula+Hoop" },
-    { id: 40, name: "Sandbox Kitll", price: 899, oldPrice: 1199, image: "https://via.placeholder.com/300x200?text=Sandbox+Kit" },
-    { id: 40, name: "Sandbox Kitll", price: 899, oldPrice: 1199, image: "https://via.placeholder.com/300x200?text=Sandbox+Kit" },
-    { id: 40, name: "Sandbox Kitll", price: 899, oldPrice: 1199, image: "https://via.placeholder.com/300x200?text=Sandbox+Kit" },
-    { id: 40, name: "Sandbox Kitll", price: 899, oldPrice: 1199, image: "https://via.placeholder.com/300x200?text=Sandbox+Kit" },
-    { id: 40, name: "Sandbox Kitll", price: 899, oldPrice: 1199, image: "https://via.placeholder.com/300x200?text=Sandbox+Kit" },
+    { id: 40, name: "Sandbox Kit", price: 899, oldPrice: 1199, image: "https://via.placeholder.com/300x200?text=Sandbox+Kit" },
   ];
 
   const toggleLike = (id) => {
@@ -51,11 +47,11 @@ const Outdoortoy = () => {
             min="99"
             max="5000"
             step="50"
-            value={price}
-            onChange={(e) => setPrice(e.target.value)}
+            value={maxPrice}
+            onChange={(e) => setMaxPrice(Number(e.target.value))}
             className="outdoortoy-range"
           />
-          <p>₹99 - ₹{price}</p>
+          <p>₹99 - ₹{maxPrice}</p>
 
           <h3>Category</h3>
           <ul className="outdoortoy-filters">
@@ -82,7 +78,7 @@ const Outdoortoy = () => {
         {/* Product Cards */}
         <main className="outdoortoy-products">
           {products
-            .filter((p) => p.price <= Number(price))
+            .filter((p) => p.price <= maxPrice)
             .map((item) => (
               <motion.div
                 key={item.id}
