@@ -17,8 +17,8 @@ function Contact() {
               C-3 Sainik Vihar, near Divider Road <br />
               Meerut, Uttar Pradesh
             </p>
-            <p>Email: rhythm@gmail.com</p>
-            <p>Phone: +91 9012897031</p>
+            <p>Email: harsh@gmail.com</p>
+            <p>Phone: +91 XXXXXXXXXX</p>
           </div>
           <div className="intel">
             <span><Mail size={25}  className="icol"/>EMAIL : <h5>QWIQOWDMQWI</h5></span>

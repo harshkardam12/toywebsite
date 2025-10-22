@@ -1,11 +1,11 @@
 import Home from './pages/Home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import About from './component/About';
 import Create from './component/Create';
 import Footer from './component/Footer';
 import Navbar from './component/Navbar';
 import Sign from './component/Sign';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Error from './component/Error';
 import Loading from './component/Loading';
 import Order from './component/Order'
@@ -24,6 +24,12 @@ import Placeorder from './component/Placeorder';
 import Productpage from './component/Productpage';
 import Bear from './component/Bear';
 import ProductCarousel from './component/Product';
+import Educationtoy from './component/Educationtoy';
+import Softtoys from './component/Softtoy';
+import Outdoortoy from './component/Outdoor';
+import Puzzlegame from './component/Puzzlegame';
+import Boardgame from './component/Boardgame';
+import Limited from './component/Limited';
 function App() {
   return (
     <div className="App">
@@ -48,8 +54,17 @@ function App() {
           <Route path="/faq" element={<Faq />} />/////////
           <Route path="/term" element={<Termandcondition />} />//////
         </Routes>
+        <Puzzlegame/>
+        {/* <Contact/> */}
+        <Boardgame/>
+        <Limited/>
+       <ProductPages/>
+       <Educationtoy/>
+       <Softtoys/>
+       <Outdoortoy/>
         <Footer />
        {/* <Create/> */}
+
       </BrowserRouter>
 
 
