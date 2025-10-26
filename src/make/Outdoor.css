@@ -1,7 +1,7 @@
 /* ────────────── CONTAINER ────────────── */
 .outdoortoy-container {
     display: flex;
-    width: 100%;
+    width: 100VW;
     gap: 20px;
     align-items: flex-start;
     caret-color: transparent;
@@ -12,7 +12,7 @@
 }
 
 .outdoor-header {
-    width: 100%;
+    width: 100VW;
     background: rgba(186, 242, 255, 1);
     padding-bottom: 30px;
 }
@@ -157,7 +157,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    align-items: start; /* Prevent stretching */
+    align-items: start;
+    /* Prevent stretching */
 }
 
 /* Product Card */
@@ -168,7 +169,8 @@
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: auto; /* Fit content */
+    height: auto;
+    /* Fit content */
     box-sizing: border-box;
     transition: transform .12s ease, box-shadow .12s ease;
 }
@@ -355,6 +357,46 @@
     }
 }
 
+@media (max-width: 400px) {
+    .boardgame-container {
+        gap: 6px;
+        padding: 6px;
+    }
+
+    .boardgame-sidebar {
+        flex: 0 0 45%;
+        width: 45%;
+        padding: 5px;
+    }
+
+    .boardgame-products {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .boardgame-card {
+        padding: 5px;
+    }
+
+    .boardgame-image-box {
+        height: 65px;
+    }
+
+    .boardgame-card h4,
+    .boardgame-pname {
+        font-size: 12px;
+    }
+
+    .boardgame-price {
+        font-size: 12px;
+    }
+
+    .boardgame-buy-btn {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+}
+
 /* <= 375px */
 @media (max-width: 375px) {
     .outdoortoy-container {
@@ -397,7 +439,15 @@
         gap: 6px;
         padding: 6px;
     }
-
+.outdoor-header h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 35px;
+    caret-color: transparent;
+    padding-top: 40px;
+    font-weight: 700;
+    color: rgba(32, 88, 110, 1);
+}
     .outdoortoy-sidebar {
         flex: 0 0 45%;
         width: 45%;
@@ -426,6 +476,7 @@
         font-size: 11px;
     }
 }
+
 /* ===== 400px breakpoint ===== */
 @media (max-width: 400px) {
     .outdoortoy-container {
@@ -449,7 +500,8 @@
     }
 
     .outdoortoy-image-box {
-        height: 65px; /* slightly larger than 320px */
+        height: 65px;
+        /* slightly larger than 320px */
     }
 
     .outdoortoy-card h4,

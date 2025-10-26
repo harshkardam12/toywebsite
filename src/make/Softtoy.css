@@ -1,14 +1,14 @@
 /* ────────────── MAIN CONTAINER ────────────── */
 .softtoys-container {
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
     gap: 20px;
     align-items: flex-start;
     caret-color: transparent;
     padding: 20px;
     box-sizing: border-box;
-    flex-wrap: nowrap;
+    background: rgba(186, 242, 255, 1);
+    flex-wrap: wrap;
 }
 
 .softtoys-header {
@@ -18,9 +18,10 @@
 }
 
 .softtoys-header h2 {
-    margin-top: 0%;
+    margin-top: 0;
     text-align: center;
     font-size: 45px;
+    caret-color: transparent;
     padding-top: 40px;
     font-weight: 700;
     color: rgba(32, 88, 110, 1);
@@ -29,6 +30,7 @@
 /* ────────────── SIDEBAR ────────────── */
 .softtoys-sidebar {
     flex: 0 0 20%;
+    min-width: 180px;
     height: auto;
     background: rgba(255, 251, 233, 1);
     padding: 16px;
@@ -44,7 +46,7 @@
     font-size: 25px;
 }
 
-/* ────────────── AGE BUTTONS ────────────── */
+/* Age Buttons */
 .softtoys-age-group {
     display: flex;
     flex-wrap: wrap;
@@ -67,8 +69,8 @@
 }
 
 .softtoys-age-btn.pink {
-    height: 5vh;
     background: rgba(249, 217, 221, 1);
+    height: 5vh;
 }
 
 .softtoys-age-btn.blue {
@@ -83,7 +85,7 @@
     background: rgba(150, 137, 229, 1);
 }
 
-/* ────────────── RANGE SLIDER ────────────── */
+/* Range Slider */
 .softtoys-range {
     -webkit-appearance: none;
     width: 100%;
@@ -115,7 +117,7 @@
     cursor: pointer;
 }
 
-/* ────────────── FILTERS ────────────── */
+/* Filters */
 .softtoys-filters {
     list-style: none;
     padding: 0;
@@ -139,35 +141,42 @@
     border: 0;
     padding: 10px;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
     font-weight: 600;
     margin-top: 8px;
+    transition: 0.3s ease;
 }
 
 .softtoys-apply-btn:hover {
     background: rgb(183, 74, 24);
 }
 
-/* ────────────── PRODUCT GRID ────────────── */
+/* ────────────── PRODUCTS GRID ────────────── */
 .softtoys-products {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    min-height: 100vh;
+    align-items: start;
 }
 
-/* ────────────── PRODUCT CARD ────────────── */
+/* Product Card */
 .softtoys-card {
     padding: 12px;
     border-radius: 10px;
-    box-shadow: 2px 5px 10px 2px black;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.12);
     display: flex;
-    background-color: white;
     flex-direction: column;
+    background-color: white;
     min-height: 300px;
     box-sizing: border-box;
+    transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.softtoys-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .softtoys-card h4 {
@@ -175,31 +184,34 @@
     font-size: 20px;
 }
 
+/* Image Box */
 .softtoys-image-box {
-    height: 120px;
+    height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 8px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .softtoys-image-box img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
+/* Title & Price */
 .softtoys-pname {
     margin: 6px 0 4px;
-    font-weight: 600;
-    font-size: 15px;
+    font-weight: 700;
+    font-size: 16px;
     text-align: center;
 }
 
 .softtoys-price {
     font-weight: 700;
-    color: #111;
+    color: black;
     margin-right: 10px;
 }
 
@@ -208,7 +220,7 @@
     text-decoration: line-through;
 }
 
-/* ────────────── ACTION BUTTONS ────────────── */
+/* Actions */
 .softtoys-actions {
     margin-top: auto;
     display: flex;
@@ -224,10 +236,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 6px;
     padding: 8px 12px;
     border-radius: 8px;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .softtoys-buy-btn:hover {
@@ -239,6 +252,15 @@
     border: none;
     cursor: pointer;
     transition: transform 0.2s ease;
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+}
+
+.softtoys-like-btn:hover {
+    transform: scale(1.2);
 }
 
 .softtoys-like-btn.liked svg {
@@ -247,8 +269,6 @@
 }
 
 /* ────────────── RESPONSIVE ────────────── */
-
-/* ✅ 1024px - Tablet Landscape */
 @media (max-width: 1024px) {
     .softtoys-products {
         grid-template-columns: repeat(2, 1fr);
@@ -260,7 +280,6 @@
     }
 }
 
-/* ✅ 768px - Tablet Portrait */
 @media (max-width: 768px) {
     .softtoys-products {
         grid-template-columns: repeat(2, 1fr);
@@ -277,10 +296,8 @@
     }
 }
 
-/* ✅ 425px - Small Phones */
 @media (max-width: 426px) {
     .softtoys-container {
-        flex-direction: row;
         gap: 8px;
         padding: 8px;
     }
@@ -292,7 +309,6 @@
     }
 
     .softtoys-products {
-        flex: 1;
         grid-template-columns: repeat(2, 1fr);
         gap: 8px;
     }
@@ -334,11 +350,8 @@
     }
 }
 
-
-/* ✅ 400px - Medium Phones */
 @media (max-width: 400px) {
     .softtoys-container {
-        flex-direction: row;
         gap: 6px;
         padding: 6px;
     }
@@ -350,7 +363,6 @@
     }
 
     .softtoys-products {
-        flex: 1;
         grid-template-columns: 1fr;
         gap: 6px;
     }
@@ -384,10 +396,8 @@
     }
 }
 
-/* ✅ 375px - Small Phones */
 @media (max-width: 375px) {
     .softtoys-container {
-        flex-direction: row;
         gap: 6px;
         padding: 6px;
     }
@@ -412,10 +422,8 @@
     }
 }
 
-/* ✅ 320px - Extra Small Phones */
 @media (max-width: 320px) {
     .softtoys-container {
-        flex-direction: row;
         gap: 4px;
         padding: 4px;
     }

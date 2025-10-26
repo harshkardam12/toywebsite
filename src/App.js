@@ -54,14 +54,14 @@ function App() {
           <Route path="/faq" element={<Faq />} />/////////
           <Route path="/term" element={<Termandcondition />} />//////
         </Routes>
-        {/* <Puzzlegame/> */}
-        {/* <Contact/> */}
-        {/* <Boardgame/> */}
-        {/* <Limited/> */}
-       {/* <ProductPages/> */}
-       {/* <Educationtoy/> */}
-       {/* <Softtoys/> */}
-       <Outdoortoy/>
+        {/* <Puzzlegame/>/// */}
+        <Contact/>
+        {/* <Boardgame/>/// */}
+        {/* <Limited/>///// */}
+       {/* <ProductPages/> ///*/}
+       {/* <Educationtoy/>/// */}
+       {/* <Softtoys/>// */}
+       {/* <Outdoortoy/>////// */}
         {/* <Footer /> */}
        {/* <Create/> */}
 

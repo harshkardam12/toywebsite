@@ -136,7 +136,6 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 15px;
   transition: 0.3s;
 }
 
@@ -146,14 +145,16 @@
 
 .limited-like-btn {
   background: none;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
 }
 
-.limited-like-btn:hover {
-  transform: scale(1.2);
-}
+
 
 .limited-like-btn.liked svg {
   fill: red;

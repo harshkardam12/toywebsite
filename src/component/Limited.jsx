@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ShoppingCart, Heart } from "lucide-react";
 
 const Limited = () => {
-  const [likedItems, setLikedItems] = useState([]);
+  const [liked, setLiked] = useState([]);
 
   const products = [
     { id: 1, name: "Deluxe Puzzle Set", price: 499, oldPrice: 699, image: "https://via.placeholder.com/300x200?text=Deluxe+Puzzle" },
@@ -19,54 +19,62 @@ const Limited = () => {
   ];
 
   const toggleLike = (id) => {
-    setLikedItems((prev) =>
-      prev.includes(id)
-        ? prev.filter((item) => item !== id)
-        : [...prev, id]
+    setLiked((prev) =>
+      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
     );
   };
 
   return (
     <div className="limited-page">
-      {/* ✅ Marquee shifted to very top */}
+      {/* Marquee at top */}
       <div className="limited-marquee">
         <marquee behavior="scroll" direction="left">
-LIMITED TIME OFFER ON YOUR FAVORITES!        </marquee>
+          🎉 LIMITED TIME OFFER ON YOUR FAVORITES! 🎉    
+        </marquee>
       </div>
 
       <h2 className="limited-title">LIMITED EDITION TOYS</h2>
 
+      {/* Product Grid */}
       <div className="limited-products">
-        {products.map((product) => (
+        {products.map((item) => (
           <motion.div
-            key={product.id}
+            key={item.id}
             className="limited-card"
             whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 300 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
             <div className="limited-image-box">
-              <img src={product.image} alt={product.name} />
+              <img src={item.image} alt={item.name} />
             </div>
 
-            <h4>{product.name}</h4>
+            <h4>{item.name}</h4>
 
             <p className="limited-pname">
-              <span className="limited-price">₹{product.price}</span>
-              <span className="limited-old">₹{product.oldPrice}</span>
+              <span className="limited-price">₹{item.price}</span>
+              <span className="limited-old">₹{item.oldPrice}</span>
             </p>
 
             <div className="limited-actions">
               <button className="limited-buy-btn">
-                <ShoppingCart size={18} /> buy now
+                Buy Now <ShoppingCart size={18} />
               </button>
 
               <button
-                className={`limited-like-btn ${
-                  likedItems.includes(product.id) ? "liked" : ""
-                }`}
-                onClick={() => toggleLike(product.id)}
+                onClick={() => toggleLike(item.id)}
+                aria-label={liked.includes(item.id) ? "Unlike" : "Like"}
+                className={`limited-like-btn ${liked.includes(item.id) ? "liked" : ""}`}
               >
-                <Heart size={22} />
+                <motion.div
+                  animate={{ scale: liked.includes(item.id) ? 1.2 : 1 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 18 }}
+                >
+                  <Heart
+                    fill={liked.includes(item.id) ? "red" : "none"}
+                    color={liked.includes(item.id) ? "red" : "black"}
+                    size={24}
+                  />
+                </motion.div>
               </button>
             </div>
           </motion.div>

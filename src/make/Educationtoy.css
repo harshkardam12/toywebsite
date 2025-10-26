@@ -1,35 +1,37 @@
 /* ────────────── CONTAINER ────────────── */
 .educationtoy-container {
     display: flex;
-    /* background cover */
+    width: 100%;
     gap: 20px;
     align-items: flex-start;
+    caret-color: transparent;
     padding: 20px;
     box-sizing: border-box;
     background: rgba(186, 242, 255, 1);
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
-.educationtoy-page{
+.educationtoy-page {
     width: 100vw;
     padding-bottom: 30px;
-    height: 100%;
-        background: rgba(186, 242, 255, 1);
-
+    background: rgba(186, 242, 255, 1);
     box-sizing: border-box;
 }
-.educationtoy-title{
+
+.educationtoy-title {
+    margin-top: 0;
     text-align: center;
     font-size: 45px;
-    font-weight: 700;
+    caret-color: transparent;
     padding-top: 40px;
-margin-top: 0%;
+    font-weight: 700;
     color: rgba(32, 88, 110, 1);
-
 }
+
 /* ────────────── SIDEBAR ────────────── */
 .educationtoy-sidebar {
     flex: 0 0 20%;
+    min-width: 180px;
     height: auto;
     background: rgba(255, 251, 233, 1);
     padding: 16px;
@@ -68,8 +70,8 @@ margin-top: 0%;
 }
 
 .educationtoy-age-btn.pink {
-    height: 5vh;
     background: rgba(249, 217, 221, 1);
+    height: 5vh;
 }
 
 .educationtoy-age-btn.blue {
@@ -140,7 +142,7 @@ margin-top: 0%;
     border: 0;
     padding: 10px;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
     font-weight: 600;
     margin-top: 8px;
@@ -150,27 +152,31 @@ margin-top: 0%;
     background: rgb(183, 74, 24);
 }
 
-/* ────────────── PRODUCT AREA ────────────── */
+/* ────────────── PRODUCTS GRID ────────────── */
 .educationtoy-products {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* default 3 cards */
     gap: 20px;
-    min-height: 100vh;
-    /* ensure background fills container */
+    align-items: start;
 }
 
-/* Card Design */
+/* Product Card */
 .educationtoy-card {
     padding: 12px;
     border-radius: 10px;
-    box-shadow: 2px 5px 10px 2px black;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.12);
     display: flex;
-    background-color: white;
     flex-direction: column;
-    min-height: 300px;
+    background-color: white;
+    height: auto;
     box-sizing: border-box;
+    transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.educationtoy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .educationtoy-card h4 {
@@ -178,31 +184,36 @@ margin-top: 0%;
     font-size: 20px;
 }
 
+/* Image Box */
 .educationtoy-image-box {
-    height: 120px;
+    height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
 }
 
 .educationtoy-image-box img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
+/* Title & Price */
 .educationtoy-pname {
     margin: 6px 0 4px;
-    font-weight: 600;
-    font-size: 15px;
+    font-weight: 700;
+    font-size: 16px;
     text-align: center;
+    color: #0f172a;
 }
 
 .educationtoy-price {
     font-weight: 700;
-    color: #111;
+    color: black;
     margin-right: 10px;
 }
 
@@ -227,22 +238,14 @@ margin-top: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 6px;
     padding: 8px 12px;
     border-radius: 8px;
     cursor: pointer;
 }
-.educationtoy-buy-btn :hover{
-  background: rgb(41, 130, 165);
-    color: #fff;
-    border: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    cursor: pointer;
+
+.educationtoy-buy-btn:hover {
+    background: rgb(41, 130, 165);
 }
 
 .educationtoy-like-btn {
@@ -250,6 +253,11 @@ margin-top: 0%;
     border: none;
     cursor: pointer;
     transition: transform 0.2s ease;
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
 }
 
 .educationtoy-like-btn:hover {
@@ -263,26 +271,44 @@ margin-top: 0%;
 
 /* ────────────── RESPONSIVE ────────────── */
 
-/* Medium Screens <= 768px */
-@media (max-width: 768px) {
+/* <= 1024px */
+@media (max-width: 1024px) {
+    .educationtoy-container {
+        gap: 15px;
+    }
+
+    .educationtoy-sidebar {
+        flex: 0 0 25%;
+        min-width: 160px;
+    }
+
     .educationtoy-products {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+/* <= 768px */
+@media (max-width: 768px) {
+    .educationtoy-container {
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .educationtoy-products {
+        grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
 
     .educationtoy-card {
         padding: 10px;
-        min-height: 200px;
     }
 
     .educationtoy-image-box {
         height: 100px;
     }
 
-    .educationtoy-pname {
-        font-size: 14px;
-    }
-
+    .educationtoy-pname,
     .educationtoy-price {
         font-size: 14px;
     }
@@ -293,203 +319,26 @@ margin-top: 0%;
     }
 }
 
-/* Small Screens <= 429px */
+/* <= 429px */
 @media (max-width: 429px) {
     .educationtoy-container {
-        flex-wrap: nowrap;
-    }
-
-    /* always sidebar left */
-    .educationtoy-sidebar {
-        flex: 0 0 30%;
-        width: 10vw;
-        margin: 0%;
-        max-height: none;
-        position: sticky;
-        top: 0;
-    }
-
-    .educationtoy-sidebar h3 {
-        font-size: 17px;
-    }
-
-    .educationtoy-age-btn {
-        padding: 8px 12px;
-        border-radius: 20px;
-        border: 0;
-        cursor: pointer;
-        background: #f2f4f6;
-        font-size: 12px;
-        transition: 0.3s ease;
-    }
-
-    .educationtoy-age-btn.pink {
-        height: 5vh;
-        width: 8vw;
-        padding: 0%;
-        background: rgba(249, 217, 221, 1);
-    }
-
-    .educationtoy-age-btn.blue {
-        height: 5vh;
-        width: 8vw;
-        padding: 0%;
-        background: rgba(186, 242, 255, 1);
-    }
-
-    .educationtoy-age-btn.yellow {
-        height: 5vh;
-        width: 8vw;
-        padding: 0%;
-        background: rgba(255, 242, 171, 1);
-    }
-
-    .educationtoy-age-btn.purple {
-        height: 5vh;
-        width: 8vw;
-        padding: 0%;
-        background: rgba(150, 137, 229, 1);
-    }
-
-    .educationtoy-apply-btn {
-        width: 100%;
-        background: rgba(238, 132, 82, 1);
-        color: #fff;
-        border: 0;
-        height: 6vh;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        font-size: 15px;
-        cursor: pointer;
-        font-weight: 400;
-    }
-
-    .educationtoy-apply-btn:hover {
-        background: rgb(183, 74, 24);
-    }
-
-    .educationtoy-products {
-        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        min-height: auto;
-    }
-
-    .educationtoy-card {
-        max-height: auto;
-        padding: 8px;
-    }
-
-    .educationtoy-price {
-        font-size: 17px;
-        font-weight: 700;
-        color: #111;
-        margin-right: 10px;
-    }
-
-    .educationtoy-old {
-        font-size: 15px;
-        color: #9aa0a6;
-        text-decoration: line-through;
-    }
-
-    .educationtoy-image-box {
-        height: 80px;
-        margin-top: 0px;
-    }
-
-    .educationtoy-pname {
-        font-size: 13px;
-    }
-
-    .educationtoy-card h4 {
-        margin-top: 0%;
-        font-size: 15px;
-        margin-bottom: 0%;
-    }
-
-    .educationtoy-buy-btn {
-        margin-top: 0%;
-        font-size: 11px;
-        padding: 4px 8px;
-    }
-}
-
-/* Extra Small Screens <= 375px */
-@media (max-width: 376px) {
-    .educationtoy-container {
-        flex-direction: row;
-        /* sidebar left */
-        padding: 8px;
-        gap: 8px;
+        padding: 10px;
     }
 
     .educationtoy-sidebar {
         flex: 0 0 35%;
-        /* left sidebar */
         width: 35%;
         padding: 8px;
     }
 
     .educationtoy-products {
-        flex: 1;
         grid-template-columns: 1fr;
-        /* 1 product per row */
-        gap: 8px;
+        gap: 10px;
     }
 
     .educationtoy-card {
-        padding: 6px;
-    }
-
-    .educationtoy-image-box {
-        height: 90px;
-    }
-
-    .educationtoy-card h4,
-    .educationtoy-pname {
-        font-size: 13px;
-    }
-
-    .educationtoy-price {
-        font-size: 13px;
-    }
-
-    .educationtoy-old {
-        font-size: 12px;
-    }
-
-    .educationtoy-buy-btn {
-        font-size: 11px;
-        padding: 5px;
-    }
-}
-
-/* Extra Small Screens <= 320px */
-@media (max-width: 320px) {
-    .educationtoy-container {
-        flex-direction: row;
-        /* sidebar left */
-        padding: 6px;
-        gap: 6px;
-    }
-
-    .educationtoy-sidebar {
-        flex: 0 0 40%;
-        /* left sidebar */
-        width: 40%;
-        padding: 6px;
-    }
-
-    .educationtoy-products {
-        flex: 1;
-        grid-template-columns: 1fr;
-        /* 1 product per row */
-        gap: 6px;
-    }
-
-    .educationtoy-card {
-        padding: 5px;
+        padding: 8px;
     }
 
     .educationtoy-image-box {
@@ -498,6 +347,42 @@ margin-top: 0%;
 
     .educationtoy-card h4,
     .educationtoy-pname {
+        font-size: 13px;
+    }
+
+    .educationtoy-price {
+        font-size: 13px;
+    }
+}
+
+/* <= 400px */
+@media (max-width: 400px) {
+    .educationtoy-container {
+        gap: 6px;
+        padding: 6px;
+    }
+
+    .educationtoy-sidebar {
+        flex: 0 0 45%;
+        width: 45%;
+        padding: 5px;
+    }
+
+    .educationtoy-products {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .educationtoy-card {
+        padding: 5px;
+    }
+
+    .educationtoy-image-box {
+        height: 65px;
+    }
+
+    .educationtoy-card h4,
+    .educationtoy-pname {
         font-size: 12px;
     }
 
@@ -505,12 +390,80 @@ margin-top: 0%;
         font-size: 12px;
     }
 
-    .educationtoy-old {
+    .educationtoy-buy-btn {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+}
+
+/* <= 375px */
+@media (max-width: 375px) {
+    .educationtoy-container {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .educationtoy-sidebar {
+        flex: 0 0 40%;
+        width: 40%;
+        padding: 6px;
+    }
+
+    .educationtoy-products {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .educationtoy-card {
+        padding: 6px;
+    }
+
+    .educationtoy-image-box {
+        height: 70px;
+    }
+
+    .educationtoy-card h4,
+    .educationtoy-pname {
+        font-size: 12px;
+    }
+
+    .educationtoy-price {
+        font-size: 12px;
+    }
+}
+
+/* <= 320px */
+@media (max-width: 320px) {
+    .educationtoy-container {
+        gap: 6px;
+        padding: 6px;
+    }
+
+    .educationtoy-sidebar {
+        flex: 0 0 45%;
+        width: 45%;
+        padding: 5px;
+    }
+
+    .educationtoy-products {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .educationtoy-card {
+        padding: 5px;
+    }
+
+    .educationtoy-image-box {
+        height: 60px;
+    }
+
+    .educationtoy-card h4,
+    .educationtoy-pname {
         font-size: 11px;
     }
 
-    .educationtoy-buy-btn {
-        font-size: 10px;
-        padding: 4px 5px;
+    .educationtoy-price {
+        font-size: 11px;
     }
 }
