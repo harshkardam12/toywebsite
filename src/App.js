@@ -40,7 +40,7 @@ function App() {
           <Route path='/sin' element={<Sign />} />
           <Route path='/create' element={<Create />} />
           <Route path='/about' element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact />} />///////
           <Route path="/list" element={<Productlist />} />///////
           <Route path="/err" element={<Error />} />////////
           <Route path="/loading" element={<Loading />} />////
@@ -54,15 +54,15 @@ function App() {
           <Route path="/faq" element={<Faq />} />/////////
           <Route path="/term" element={<Termandcondition />} />//////
         </Routes>
-        {/* <Puzzlegame/>/// */}
-        <Contact/>
-        {/* <Boardgame/>/// */}
-        {/* <Limited/>///// */}
-       {/* <ProductPages/> ///*/}
-       {/* <Educationtoy/>/// */}
-       {/* <Softtoys/>// */}
-       {/* <Outdoortoy/>////// */}
-        {/* <Footer /> */}
+        <Puzzlegame/>///
+        {/* <About/> */}
+        <Boardgame/>///
+        <Limited/>/////
+       <ProductPages/> ///
+       <Educationtoy/>///
+       <Softtoys/>//
+       <Outdoortoy/>//////
+        <Footer />
        {/* <Create/> */}
 
       </BrowserRouter>
