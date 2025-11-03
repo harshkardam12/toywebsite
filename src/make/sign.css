@@ -3,15 +3,15 @@
   width: 100vw;
   background-color: rgba(186, 242, 255, 1);
   display: flex;
- 
-  position: relative; 
+  position: relative;
 }
 
+/* Main box */
 .login-box {
   width: 30vw;
   height: 90vh;
   border-radius: 25px;
-  background: url('../assets/bole.png') no-repeat center center/cover; 
+  background: url('../assets/bole.png') no-repeat center center/cover;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
@@ -21,6 +21,7 @@
   overflow: hidden;
 }
 
+/* Form container */
 .form-box {
   width: 20vw;
   height: 43vh;
@@ -31,47 +32,32 @@
   text-align: center;
 }
 
-.form-box input {
-  width: 90%;
-  padding: 12px;
-  font-size: 20px;
-  border-radius: 10px;
-  border: 3px solid #f5deb3;
-  outline: none;
-}
-.form-box input[type="email"] {
-  padding-left: 45px; /* space for icon */
-  
-}
-.form-box input[type="password"] {
-  padding-left: 45px; /* space for icon */
-  
-}
-.form-box input::placeholder {
-  color: rgba(31, 52, 116, 0.35);
-  font-size: 20px;
-  font-family: 'Trebuchet MS', Arial, sans-serif;
-}
+/* Input container */
 .input-box {
   position: relative;
   width: 90%;
+  margin: 10px auto;
 }
 
 .input-box input {
   width: 100%;
-  padding: 12px 12px 12px 45px; /* left space for icon */
+  padding: 12px 12px 12px 45px;
   font-size: 20px;
   border-radius: 10px;
-  margin-top: 0%;
   border: 3px solid rgba(31, 52, 116, 1);
   outline: none;
   font-family: 'Trebuchet MS', Arial, sans-serif;
   box-sizing: border-box;
 }
 
+.input-box input::placeholder {
+  color: rgba(31, 52, 116, 0.35);
+  font-size: 20px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
 
-
-.input-box .icon {
+/* Icon style */
+.icon {
   position: absolute;
   top: 50%;
   left: 19px;
@@ -81,6 +67,7 @@
   pointer-events: none;
 }
 
+/* Sign-in button */
 .signin-btn {
   width: 95%;
   padding: 12px;
@@ -92,24 +79,29 @@
   font-weight: bold;
   cursor: pointer;
   font-size: 16px;
+  transition: 0.3s;
 }
 
 .signin-btn:hover {
   background: #ff4040;
-  margin-top: 20px;
+  transform: scale(1.02);
 }
 
+/* Forgot password */
 .forgot {
   margin: 10px 0;
   font-size: 20px;
   font-weight: 500;
   color: gray;
   cursor: pointer;
+  transition: 0.2s;
 }
-.forgot:hover{
+
+.forgot:hover {
   color: orange;
 }
 
+/* Create button */
 .create-btn {
   width: 95%;
   padding: 12px;
@@ -121,6 +113,7 @@
   font-weight: bold;
   cursor: pointer;
   font-size: 20px;
+  transition: 0.3s;
 }
 
 .create-btn:hover {
@@ -128,20 +121,205 @@
   color: white;
 }
 
+/* Bear image */
 .bear {
-  z-index: 2;
-  right: 320px;  
-    top: 34vh;
-
-  width: 25vw;
-  height: 60vh;   
-  pointer-events: none; 
-}
-.lll{
   position: absolute;
   z-index: 2;
-margin-top:30px;
-margin-left: 41vw;  width: 15vw;
-  height: 35vh;   
+  right: 320px;
+  top: 34vh;
+  width: 25vw;
+  height: 60vh;
   pointer-events: none;
+}
+
+/* Small floating image */
+.lll {
+  position: absolute;
+  z-index: 2;
+  margin-top: 30px;
+  margin-left: 41vw;
+  width: 15vw;
+  height: 35vh;
+  pointer-events: none;
+}
+
+@media(max-width:1024px) {
+
+  .login-box {
+    width: 45vw;
+    height: 85vh;
+    margin-left: 33vh;
+  }
+
+  .form-box {
+    width: 30vw;
+    height: 35vh;
+    margin-top: 40vh;
+  }
+
+  .bear {
+    width: 35vw;
+    height: 40vh;
+    right: 150px;
+    top: 50vh;
+    left: 71vh;
+  }
+
+  .lll {
+    width: 30vw;
+    height: auto;
+    margin-top: 8vh;
+    margin-left: 37vw;
+  }
+}
+
+@media(max-width:768px) {
+
+  .login-box {
+    width: 60vw;
+    height: 80vh;
+    margin-top: 10vh;
+    margin-left: 15vh;
+  }
+
+  .form-box {
+    width: 40vw;
+    height: 35vh;
+    margin-top: 36vh;
+  }
+
+  .bear {
+    width: 40vw;
+    height: auto;
+    right: 100px;
+    top: 55vh;
+    left: 52vh;
+  }
+
+  .lll {
+    width: 35vw;
+    height: auto;
+    margin-top: 13vh;
+    margin-left: 30vw;
+  }
+
+}
+
+@media(max-width:426px) {
+
+  .login-box {
+    width: 80vw;
+    height: 75vh;
+    margin-top: 5vh;
+    margin-left: 5vh;
+  }
+
+  .form-box {
+    width: 60vw;
+    height: 35vh;
+    margin-top: 30vh;
+  }
+
+  .bear {
+    width: auto;
+    height: 20vh;
+    right: 50px;
+    top: 60vh;
+    left: 28vh;
+  }
+
+  .lll {
+    width: 60vw;
+    height: auto;
+    margin-top: 5vh;
+    margin-left: 20vw;
+  }
+
+}
+
+@media(max-width:400px) {
+  .login-box {
+    width: 80vw;
+    height: 75vh;
+    margin-top: 5vh;
+    margin-left: 5vh;
+  }
+
+  .bear {
+    width: auto;
+    height: 14.8vh;
+    right: 50px;
+    top: 60vh;
+    left: 28vh;
+  }
+
+  .lll {
+    width: 60vw;
+    height: auto;
+    margin-top: 8vh;
+    margin-left: 20vw;
+  }
+}
+@media(max-width: 320px) {
+
+  .sign {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .login-box {
+    width: 85vw;
+    height: 70vh;
+    margin-top: 6vh;
+    margin-left: 0;
+    background-size: cover;
+  }
+
+  .form-box {
+    width: 70vw;
+    height: 32vh;
+    margin-top: 28vh;
+    padding: 15px;
+  }
+
+  .input-box input {
+    font-size: 16px;
+    padding: 10px 10px 10px 40px;
+  }
+
+  .input-box input::placeholder {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 18px;
+    left: 14px;
+  }
+
+  .signin-btn,
+  .create-btn {
+    width: 90%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .forgot {
+    font-size: 16px;
+  }
+
+  .bear {
+    width: auto;
+    height: 14vh;
+    top: 58vh;
+    left: 22vh;
+    right: auto;
+  }
+
+  .lll {
+    width: 65vw;
+    height: auto;
+    margin-top: 6vh;
+margin-left: 1vw;
+  }
 }

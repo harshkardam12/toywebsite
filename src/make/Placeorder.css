@@ -1,75 +1,561 @@
-.placeorder {
-    height: 100%;
-    width: 100vw;
-    background-color: rgba(186, 242, 255, 1);
-
+/* 🌈 Base Layout */
+.checkout-wrapper {
+  position: relative;
+background-color: rgba(186, 242, 255, 1);
+  padding: 40px 30px;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-.place1 {}
-
-.place1 h1 {
-    text-align: center;
-    margin-top: 0%;
-    padding-top: 30px;
-    font-size: 50px;
-    color: rgba(32, 88, 110, 1);
+/* 🎈 Decorative Images */
+.checkout-wrapper::before,
+.checkout-wrapper::after {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: 0;
 }
 
-.ballone {
-    height: 300px;
-    margin-top: 30px;
-    width: auto;
+.checkout-wrapper::after {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/414/414927.png");
+  width: 180px;
+  height: 120px;
+  bottom: 20px;
+  right: 40px;
 }
 
-.tddy {
-    margin-right: 590px;
-    height: 420px;
-    width: auto;
+/* 💳 Main Title */
+.checkout-title {
+  text-align: center;
+  font-size: 36px;
+  color: #143b6d;
+  font-weight: 700;
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative;
 }
 
-.imgk {
-    display: flex;
-    justify-content: space-around;
+/* 🧩 Grid Layout */
+.checkout-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: start;
+  position: relative;
+  z-index: 2;
 }
 
-.check-add {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding-bottom: 20px;
+/* 📦 Sections */
+.checkout-section {
+  background: #ffffff;
+  border-radius: 20px;
+
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
-.add-bttn {
-    height: 7vh;
-    width: 18vw;
-    margin-left: 20vh;
-    border: none;
-    border-radius: 10px;
-    padding-left: 20px;
+.section-header {
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.decor-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.address-form {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🏠 Address Section */
+.address-form input {
+  width: 20vw;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 12px;
+  border: 1px solid #cddaf3;
+  background: #f8faff;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.address-form input:focus {
+  border-color: #007bff;
+  background: #ffffff;
+}
+
+ul li {
+  cursor: pointer;
+  caret-color: transparent;
+}
+
+.half-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 💳 Payment Section */
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.methods-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.upi-icons {
+  gap: 15px;
+
+  display: flex;
+}
+
+.methods-list button {
+  flex: 1;
+  min-width: 100px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #d0d6f3;
+  background: #f8faff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.methods-list button:hover {
+  background: #e6f0ff;
+  transform: scale(1.03);
+}
+
+.methods-list button.active {
+  background: #007bff;
+  color: #fff;
+  border-color: #005dc1;
+}
+.save-card{
+  font-size: 20px;
+  >input{
+  
+    margin-top: 30px;}
+
+}
+.payment-display {
+  background: #f4f9ff;
+  border-radius: 14px;
+  padding: 15px;
+}
+
+/* 💳 VISA CARD (NEW DESIGN) */
+.visa-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 360px;
+  height: 220px;
+  background-image: radial-gradient(circle 897px at 9% 80.3%,
+      rgba(55, 60, 245, 1) 0%,
+      rgba(234, 161, 15, 0.9) 100.2%);
+  border-radius: 16px;
+  padding: 28px 22px;
+  font-family: "Poppins", Arial, sans-serif;
+  position: relative;
+  gap: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+
+.logoContainer {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+}
+
+.svgLogo {
+  height: 40px;
+  width: 40px;
+}
+
+.inputstyle {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  caret-color: red;
+  font-size: 14px;
+  height: 30px;
+  letter-spacing: 1.6px;
+  width: 100%;
+}
+
+.inputstyle::placeholder {
+  color: #e5e5e5;
+}
+
+.number-container {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+
+#cardNumber {
+  width: 100%;
+  height: 35px;
+}
+
+.name-date-cvv-container {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.name-wrapper,
+.expiry-wrapper,
+.cvv-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.name-wrapper {
+  width: 55%;
+}
+
+.expiry-wrapper {
+  width: 25%;
+}
+
+.cvv-wrapper {
+  width: 18%;
+}
+
+.input-label {
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  color: #f5f5f5;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.checkout-section-order-summary {
+  background: #ffffff;
+  border-radius: 20px;
+  width: auto;
+  height: auto;
+
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* 🧾 Order Summary */
+.coupon-box {
+  background: #f05e6a;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  caret-color: transparent;
+  margin-bottom: 15px;
+}
+
+.coupon-box p {
+  margin-top: 0%;
+  cursor: pointer;
+}
+
+.apply-coupon {
+  color: white;
+  background-color: #f05e6a;
+  border: none;
+  padding: 8px 14px;
+    caret-color: transparent;
+
+  margin-left: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.apply-coupon1 {
+  color: white;
+  background-color: transparent;
+  border: none;
+  padding: 8px 14px;
+  margin-left: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Net-bank {
+  color: white;
+  background-color: #f05e6a;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+    caret-color: transparent;
+
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.Net-bank:hover {
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.apply-coupon:hover {
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.upi-id {
+  width: 15vw;
+  font-size: 20px;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.upi-id::placeholder {
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+
+.price-summary {
+  background: #f5f9ff;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.price-summary p {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.price-summary .total {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.Order-bttn {
+  width: 100%;
+  background: #ff6f00;
+  color: #fff;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.Order-bttn:hover {
+  background: #e65c00;
+}
+
+.bank-img {
+  height: 30px;
+  cursor: pointer;
+  width: 30px;
+  border-radius: 100%;
+}
+
+.save-text {
+  display: block;
+  margin-top: 8px;
+  color: #0a7a00;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* 🟠 Place Order button */
+.place-order {
+  width: 100%;
+  background: #ff6f00;
+  color: #fff;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.place-order:hover {
+  background: #e65c00;
+}
+
+/* ----------------------------
+   🎯 RESPONSIVE BREAKPOINTS
+----------------------------- */
+@media (max-width: 1024px) {
+  .checkout-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .checkout-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-section {
+    padding: 18px;
+  }
+
+  .checkout-title {
+    font-size: 28px;
+  }
+
+  .place-order {
+    font-size: 17px;
+  }
+
+  .visa-card {
+    width: 310px;
+    height: 190px;
+    padding: 22px 18px;
+    gap: 16px;
+  }
+
+  .number-container {
+    margin-top: 38px;
+    height: 50px;
+  }
+
+  .name-date-cvv-container {
+    height: 50px;
+  }
+
+  .inputstyle {
+    font-size: 12px;
+    height: 26px;
+  }
+
+  .input-label {
+    font-size: 9px;
+  }
+
+  .svgLogo {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@media (max-width: 425px) {
+  .checkout-wrapper {
+    padding: 20px 15px;
+  }
+
+  .checkout-title {
+    font-size: 26px;
+  }
+
+  .checkout-section {
+    padding: 15px;
+  }
+
+  .place-order {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .visa-card {
+    width: 270px;
+    height: 170px;
+    padding: 18px 14px;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .checkout-wrapper {
+    padding: 15px;
+  }
+
+  .checkout-title {
+    font-size: 22px;
+  }
+
+  .address-form input {
+    padding: 8px;
+  }
+
+  .place-order {
+    font-size: 15px;
+  }
+
+  .visa-card {
+    width: 250px;
+    height: 160px;
+    padding: 16px 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .checkout-title {
     font-size: 20px;
-}
+  }
 
-.add-bttn::placeholder {
-    color: rgba(32, 88, 110, 0.55);
-    font-size: 20px;
-    font-weight: 700;
+  .checkout-section {
+    padding: 10px;
+  }
 
-}
+  .address-form input {
+    font-size: 13px;
+  }
 
-.add-bttn:focus {
-    outline: none;
-}
-.check-detail{
-    display: flex;
-}
-.check-detail h2{
-font-size: 35px;
-margin-top: 80px;
-margin-left: 20vh;
-}
-.Pin-img{
-    height: 400px;
-    width: auto;
-    margin-left: 190px;
-    margin-top: 140px;
+  .place-order {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .visa-card {
+    width: 230px;
+    height: 150px;
+    padding: 14px 10px;
+  }
 }

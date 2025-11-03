@@ -37,9 +37,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/sin' element={<Sign />} />
-          <Route path='/create' element={<Create />} />
-          <Route path='/about' element={<About />} />
+          <Route path='/sin' element={<Sign />} />/////
+          <Route path='/create' element={<Create />} />///////
+          <Route path='/about' element={<About />} />/////////
           <Route path="/contact" element={<Contact />} />///////
           <Route path="/list" element={<Productlist />} />///////
           <Route path="/err" element={<Error />} />////////
@@ -54,14 +54,15 @@ function App() {
           <Route path="/faq" element={<Faq />} />/////////
           <Route path="/term" element={<Termandcondition />} />//////
         </Routes>
-        <Puzzlegame/>///
-        {/* <About/> */}
-        <Boardgame/>///
-        <Limited/>/////
-       <ProductPages/> ///
-       <Educationtoy/>///
-       <Softtoys/>//
-       <Outdoortoy/>//////
+        {/* <Puzzlegame/>/// */}
+{/* <Home/> */}
+<Placeorder/>
+        {/* <Boardgame/>/// */}
+        {/* <Limited/>///// */}
+       {/* <ProductPages/> /// */}
+       {/* <Educationtoy/>/// */}
+       {/* <Softtoys/>// */}
+       {/* <Outdoortoy/>////// */}
         <Footer />
        {/* <Create/> */}
 

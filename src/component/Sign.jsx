@@ -14,7 +14,7 @@ function Sign() {
           {/* Email Input */}
           <div className="input-box">
             <Mail className="icon" />
-            <input type="email" placeholder="Email or Username" />
+            <input type="email" placeholder="Email or Username"  />
           </div>
 
           {/* Password Input */}
@@ -30,7 +30,7 @@ function Sign() {
           </Link>
         </div>
       </div>
-<img src={Poke2} alt="" className="lll" />
+      <img src={Poke2} alt="" className="lll" />
       <img src={Poke} alt="bear" className="bear" />
     </div>
   );
