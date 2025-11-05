@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../make/Placeorder.css";
+import Clip from "../assets/bear.png";
+import Clip2 from "../assets/check.png";
 import {
   FaCcVisa,
   FaCcMastercard,
@@ -48,27 +50,30 @@ const PlaceOrder = () => {
       <h1 className="checkout-title">Checkout</h1>
 
       <div className="checkout-grid">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
-          alt="teddy"
-          className="decor-icon"
-        />
+        <div className="addo">
+          <img
+            src={Clip}
+            alt="teddy"
+            className="decor-icon"
+          />
 
-        {/* 🏠 Shipping Address */}
-        <section className="checkout-section address-section">
-          <div className="section-header">
-            <h2>Shipping Address</h2>
-          </div>
-
-          <form className="address-form">
-            <input type="text" placeholder="Full Name" />
-            <input type="text" placeholder="Street Address" />
-            <div className="half-row">
-              <input type="text" placeholder="City" />
-              <input type="text" placeholder="Pin Code" />
+          {/* 🏠 Shipping Address */}
+          <section className="checkout-section2 address-section">
+            <div className="section-header">
+              <h2>Shipping Address</h2>
             </div>
-          </form>
-        </section>
+
+            <form className="address-form">
+              <input type="text" placeholder="Full Name" />
+              <input type="text" placeholder="Street Address" />
+              <div className="half-row">
+                <input type="text" placeholder="City" />
+                <input type="text" placeholder="Pin Code" />
+                <input type="text" placeholder="Phone no.." />
+              </div>
+            </form>
+          </section>
+        </div>
 
         {/* 💳 Payment Details */}
         <section className="checkout-section payment-section">
@@ -203,8 +208,11 @@ const PlaceOrder = () => {
                     </div>
                   </div>
 
-                  <label className="save-card">
-                    <input type="checkbox" /> Save card as per RBI guidelines
+                  <label className="save-card"><div>
+                    <input type="checkbox" /> Save card as per RBI guidelines</div>
+                      <button className="pay-card">
+                        Pay Now
+                      </button>
                   </label>
                 </div>
               )}
@@ -259,37 +267,39 @@ const PlaceOrder = () => {
             </div>
           </div>
         </section>
+        <div className="addo2">
+          {/* 🧾 Order Summary */}
+          <section className="checkout-section-order-summary">
+            <div className="section-header">
+              <h2>Order Summary</h2>
+            </div>
 
-        {/* 🧾 Order Summary */}
-        <section className="checkout-section-order-summary">
-          <div className="section-header">
-            <h2>Order Summary</h2>
-          </div>
+            <div className="coupon-box">
+              <button className="apply-coupon1">Apply Coupons</button>
+              <p>view all coupnes</p>
+            </div>
 
-          <div className="coupon-box">
-            <button className="apply-coupon1">Apply Coupons</button>
-            <p>view all coupnes</p>
-          </div>
+            <div className="price-summary">
+              <p>
+                <span>Total MRP:</span> <span>₹2299</span>
+              </p>
+              <p>
+                <span>Discount:</span> <span>- ₹105</span>
+              </p>
+              <p>
+                <span>Delivery:</span> <span>₹0</span>
+              </p>
+              <hr />
+              <p className="total">
+                <strong>Total:</strong> <strong>₹2194</strong>
+              </p>
+              <small className="save-text">🎉 You saved ₹105!</small>
+            </div>
 
-          <div className="price-summary">
-            <p>
-              <span>Total MRP:</span> <span>₹2299</span>
-            </p>
-            <p>
-              <span>Discount:</span> <span>- ₹105</span>
-            </p>
-            <p>
-              <span>Delivery:</span> <span>₹0</span>
-            </p>
-            <hr />
-            <p className="total">
-              <strong>Total:</strong> <strong>₹2194</strong>
-            </p>
-            <small className="save-text">🎉 You saved ₹105!</small>
-          </div>
-
-          <button className="place-order">Place Order</button>
-        </section>
+            <button className="place-order">Place Order</button>
+          </section>
+          <img src={Clip2} alt="" className="Clip2" />
+        </div>
       </div>
     </div>
   );

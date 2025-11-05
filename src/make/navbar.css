@@ -291,7 +291,7 @@
   }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 769px) {
   .navbar23 {
     height: 10vh;
   }
@@ -323,12 +323,12 @@
   }
 
   .search-box {
-    width: 30vw;
+    width: 40vw;
   }
 
   .search-box input {
     height: 4vh;
-    width: 30vh;
+    width: 35vh;
     font-size: 16px;
   }
 
