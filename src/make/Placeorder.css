@@ -626,13 +626,14 @@ ul li {
 
   .decor-icon {
     width: auto;
-    height: 40vh;
-    margin-left: 0vw;
+    height: 35vh;
+    margin-top: 29vw;
+    margin-left: -10px;
   }
 
   .addo2 {
     display: flex;
-    gap: 0vw;
+    gap: 10px;
     margin-top: 20px;
   }
 
@@ -650,8 +651,8 @@ ul li {
 
   .Clip2 {
     width: auto;
-    height: 20vh;
-    margin-top: 60vw;
+    height: 15vh;
+    margin-top: 75vw;
   }
 
   .addo {
@@ -681,11 +682,11 @@ ul li {
   .checkout-section-order-summary {
     background: #ffffff;
     border-radius: 20px;
-    width: 38vw;
+    width: 43vw;
     height: 40vh;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 5vh;
-    padding: 20px;
+    padding: 30px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
   }
 
@@ -717,17 +718,18 @@ ul li {
     gap: 12px;
   }
 }
-
-
-
 @media(max-width:400px) {
   .decor-icon {
     width: auto;
-    height: 35vh;
+    height: 30vh;
     margin-top: 15vh;
     margin-left: -10px;
   }
-
+.section-header h2 {
+  font-size: 24px;
+  margin-top: 0%;
+  text-align: center;
+}
 }
 
 @media (max-width: 376px) {
@@ -749,20 +751,23 @@ ul li {
   .checkout-title {
     font-size: 30px;
   }
-
+.checkout-section2 {
+    padding: 15px;
+    margin-left: -20px;
+    width: 45vw;
+  }
   .checkout-section-order-summary {
     background: #ffffff;
     border-radius: 20px;
-    width: 41vw;
-    height: 40vh;
-    margin-left: 40px;
+    width: 45vw;
+    height: auto;
+    margin-left: 20px;
     margin-top: 5vh;
     padding: 20px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
   }
 
   .address-form input {
-    padding: 8px;
   }
 
   .place-order {
