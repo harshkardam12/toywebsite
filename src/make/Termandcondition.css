@@ -582,6 +582,79 @@
         font-size: 15px;
     }
 }
+/* -------- Redmi Note 13 5G (≈400px width) -------- */
+@media (max-width: 400px) {
+  /* UPPER BOXES */
+  .tmg {
+    height: 120px; /* upar ka box kam height */
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .header-1 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+  }
+
+  .tmg2 {
+    height: 110px; /* upar ka dusra box thoda chhota */
+    width: auto;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .span-1 {
+    height: auto; /* content ke hisaab se height adjust */
+    width: 70vw;
+    font-size: 13px;
+    margin-left: 0px;
+    margin-top: 25px;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  /* LOWER BOXES */
+  .tmg3,
+  .tmg4,
+  .tmg5,
+  .tmg6 {
+    height: 140px; /* niche ke boxes thoda lamba */
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  
+  .header-2,
+  .header-3,
+  .header-4,
+  .header-5,
+  .header-6 {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+  }
+
+  .para-1,
+  .para-2,
+  .para-3,
+  .para-4,
+  .para-5 {
+    font-size: 12px;
+    line-height: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 /* ---------------- 375px ---------------- */
 @media(max-width:380px) {
     .tmg {
