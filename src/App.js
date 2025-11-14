@@ -55,16 +55,17 @@ function App() {
           <Route path="/term" element={<Termandcondition />} />//////
         </Routes>
         {/* <Puzzlegame/>/// */}
-{/* <Home/> */}
-<Placeorder/>
+        {/* <Home/> */}
+        {/* <Placeorder/> */}
         {/* <Boardgame/>/// */}
         {/* <Limited/>///// */}
-       {/* <ProductPages/> /// */}
-       {/* <Educationtoy/>/// */}
-       {/* <Softtoys/>// */}
-       {/* <Outdoortoy/>////// */}
+        {/* <ProductPages/> /// */}
+        {/* <Educationtoy/>/// */}
+        {/* <Softtoys/>// */}
+        {/* <Outdoortoy/>////// */}
         <Footer />
-       {/* <Create/> */}
+        {/* <Create/> */}
+        
 
       </BrowserRouter>
 
