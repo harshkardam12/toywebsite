@@ -1,6 +1,6 @@
 .content {
     height: auto;
-    width: 100vw;
+    width: 100VW;
     background-color: rgba(186, 242, 255, 1);
     padding-top: 0%;
     margin-top: 0%;
@@ -45,7 +45,7 @@
 
 .circle {
     height: 40vh;
-    width: 100vw;
+    width: 100%;
     background-color: rgba(186, 242, 255, 1);
     display: flex;
     flex-wrap: wrap;

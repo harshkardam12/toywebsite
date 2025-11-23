@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "../make/product.css";
@@ -25,16 +26,17 @@ function ProductCarousel() {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }}
-        loop={true}
-        className="carousel-swiper"
+        loop={false}   // FIX 🔥 no button bug
         slidesPerView={3}
-        spaceBetween={20}   // 👉 GAP YAHAN SE CONTROL
+        spaceBetween={0}
         breakpoints={{
-          0: { slidesPerView: 2, spaceBetween: 12 },
-          425: { slidesPerView: 2, spaceBetween: 0 },
-          768: { slidesPerView: 2, spaceBetween: 0 },
-          1024: { slidesPerView: 3, spaceBetween: 10 },
+          0: { slidesPerView: 1, spaceBetween: 12 },
+          375: { slidesPerView: 1, spaceBetween: 12 },
+          425: { slidesPerView: 2, spaceBetween: 0},
+          768: { slidesPerView: 3, spaceBetween: 0 },
+          1024: { slidesPerView: 3, spaceBetween: 20 },
         }}
+        className="carousel-swiper"
       >
         {products.map((product) => (
           <SwiperSlide key={product.id}>
@@ -60,11 +62,11 @@ function ProductCarousel() {
             </div>
           </SwiperSlide>
         ))}
-      </Swiper>
 
-      {/* 👉 CUSTOM NEXT / PREV BUTTONS */}
-      <div className="swiper-button-prev custom-nav"></div>
-      <div className="swiper-button-next custom-nav"></div>
+        {/* NOTE: Buttons must be inside the Swiper only */}
+        <div className="swiper-button-prev custom-nav"></div>
+        <div className="swiper-button-next custom-nav"></div>
+      </Swiper>
     </div>
   );
 }

@@ -223,3 +223,77 @@
         line-height: 30px;
     }
 }
+/* -------- EXTRA RESPONSIVE -------- */
+@media (max-width: 400px) {
+    .about .alo {
+        height: 65vh;
+    }
+
+    .about .alo h1,
+    .about .alol h1,
+    .about .ulu h2,
+    .about .khat h1 {
+        font-size: 24px;
+    }
+
+    .about .alol p,
+    .about .khat p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .about .god img,
+    .about .train img {
+        width: 90%;
+        max-width: 260px;
+    }
+
+    .about .ulu ul li,
+    .about .khat ol li {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .about .alok,
+    .about .why {
+        padding: 30px 10px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .about .alo {
+        height: 60vh;
+    }
+
+    .about .alo h1,
+    .about .alol h1,
+    .about .ulu h2,
+    .about .khat h1 {
+        font-size: 20px;
+    }
+
+    .about .alol p,
+    .about .khat p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .about .god img,
+    .about .train img {
+        width: 95%;
+        max-width: 220px;
+    }
+
+    .about .ulu ul li,
+    .about .khat ol li {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .about .alok,
+    .about .why {
+        padding: 20px 5px;
+        gap: 10px;
+    }
+}

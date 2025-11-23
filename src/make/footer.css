@@ -1,9 +1,10 @@
 /* ===== FINAL CRYSTAL + SILVER FOOTER FULL WIDTH ===== */
 .footer {
-  width: 100vw;
+  width: 100VW;
   /* full viewport width */
   padding: 0;
   /* remove all padding */
+  caret-color: transparent;
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;

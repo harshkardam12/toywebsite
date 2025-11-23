@@ -77,11 +77,11 @@ export default function Footer() {
 
         <div className="footer-box">
           <h2>Categories</h2>
-          <h3><Link to="#">Smart Gadgets</Link></h3>
-          <h3><Link to="#">Transport Toys</Link></h3>
-          <h3><Link to="#">Animal Toys</Link></h3>
-          <h3><Link to="#">Games & Puzzles</Link></h3>
-          <h3><Link to="#">Gift Boxes</Link></h3>
+          <h3><Link to="#"onClick={scrollToTop}>Smart Gadgets</Link></h3>
+          <h3><Link to="/board" onClick={scrollToTop}>Indoor Game's</Link></h3>
+          <h3><Link to="soft" onClick={scrollToTop}>Soft Toys</Link></h3>
+          <h3><Link to="puz" onClick={scrollToTop}>Games & Puzzles</Link></h3>
+          <h3><Link to="#" onClick={scrollToTop}>Outdoor Game's</Link></h3>
         </div>
 
         <div className="footer-box">

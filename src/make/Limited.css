@@ -2,7 +2,7 @@
 /* ────────────── MARQUEE (Below navbar, top of content) ────────────── */
 .limited-page marquee {
   display: block;
-  width: 100% ;
+  width: 100VW ;
   text-align: center;
   font-size: 18px;
   font-weight: 500;

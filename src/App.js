@@ -53,6 +53,12 @@ function App() {
           <Route path="/return" element={<Return />} />//////**** */
           <Route path="/faq" element={<Faq />} />/////////
           <Route path="/term" element={<Termandcondition />} />//////
+          <Route path="/product" element={<ProductPage/>} />//////
+          <Route path="/board" element={<Boardgame />} />//////
+          <Route path="/soft" element={<Softtoys/>} />//////
+          <Route path="/out" element={<Outdoortoy />} />//////
+          <Route path="/puz" element={<Puzzlegame />} />//////
+
         </Routes>
         {/* <Puzzlegame/>/// */}
         {/* <Home/> */}

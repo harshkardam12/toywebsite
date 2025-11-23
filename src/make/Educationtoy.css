@@ -1,7 +1,7 @@
 /* ────────────── CONTAINER ────────────── */
 .educationtoy-container {
     display: flex;
-    width: 100%;
+    width: 100VW;
     gap: 20px;
     align-items: flex-start;
     caret-color: transparent;
